@@ -1,15 +1,163 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.oywa.it/</loc>
     <lastmod>2026-10-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.oywa.it/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.oywa.it/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.oywa.it/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.oywa.it/pt/"/>
+  </url>
+  <url>
+    <loc>https://www.oywa.it/en/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.oywa.it/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.oywa.it/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.oywa.it/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.oywa.it/pt/"/>
+  </url>
+  <url>
+    <loc>https://www.oywa.it/es/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.oywa.it/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.oywa.it/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.oywa.it/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.oywa.it/pt/"/>
+  </url>
+  <url>
+    <loc>https://www.oywa.it/pt/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.oywa.it/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.oywa.it/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.oywa.it/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.oywa.it/pt/"/>
   </url>
   <url>
     <loc>https://www.oywa.it/funzioni.html</loc>
     <lastmod>2026-10-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.oywa.it/funzioni.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.oywa.it/en/features.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.oywa.it/es/funciones.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.oywa.it/pt/funcionalidades.html"/>
+  </url>
+  <url>
+    <loc>https://www.oywa.it/en/features.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.oywa.it/funzioni.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.oywa.it/en/features.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.oywa.it/es/funciones.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.oywa.it/pt/funcionalidades.html"/>
+  </url>
+  <url>
+    <loc>https://www.oywa.it/es/funciones.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.oywa.it/funzioni.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.oywa.it/en/features.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.oywa.it/es/funciones.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.oywa.it/pt/funcionalidades.html"/>
+  </url>
+  <url>
+    <loc>https://www.oywa.it/pt/funcionalidades.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.oywa.it/funzioni.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.oywa.it/en/features.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.oywa.it/es/funciones.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.oywa.it/pt/funcionalidades.html"/>
   </url>
   <url>
     <loc>https://www.oywa.it/privacy/</loc>
     <lastmod>2026-10-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.oywa.it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.oywa.it/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.oywa.it/es/privacidad/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.oywa.it/pt/privacidade/"/>
+  </url>
+  <url>
+    <loc>https://www.oywa.it/en/privacy/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.oywa.it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.oywa.it/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.oywa.it/es/privacidad/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.oywa.it/pt/privacidade/"/>
+  </url>
+  <url>
+    <loc>https://www.oywa.it/es/privacidad/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.oywa.it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.oywa.it/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.oywa.it/es/privacidad/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.oywa.it/pt/privacidade/"/>
+  </url>
+  <url>
+    <loc>https://www.oywa.it/pt/privacidade/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.oywa.it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.oywa.it/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.oywa.it/es/privacidad/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.oywa.it/pt/privacidade/"/>
+  </url>
+  <url>
+    <loc>https://www.oywa.it/cookie/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.oywa.it/cookie/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.oywa.it/en/cookies/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.oywa.it/es/cookies/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.oywa.it/pt/cookies/"/>
+  </url>
+  <url>
+    <loc>https://www.oywa.it/en/cookies/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.oywa.it/cookie/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.oywa.it/en/cookies/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.oywa.it/es/cookies/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.oywa.it/pt/cookies/"/>
+  </url>
+  <url>
+    <loc>https://www.oywa.it/es/cookies/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.oywa.it/cookie/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.oywa.it/en/cookies/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.oywa.it/es/cookies/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.oywa.it/pt/cookies/"/>
+  </url>
+  <url>
+    <loc>https://www.oywa.it/pt/cookies/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.oywa.it/cookie/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.oywa.it/en/cookies/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.oywa.it/es/cookies/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.oywa.it/pt/cookies/"/>
+  </url>
+  <url>
+    <loc>https://www.oywa.it/termini/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.oywa.it/termini/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.oywa.it/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.oywa.it/es/terminos/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.oywa.it/pt/termos/"/>
+  </url>
+  <url>
+    <loc>https://www.oywa.it/en/terms/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.oywa.it/termini/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.oywa.it/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.oywa.it/es/terminos/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.oywa.it/pt/termos/"/>
+  </url>
+  <url>
+    <loc>https://www.oywa.it/es/terminos/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.oywa.it/termini/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.oywa.it/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.oywa.it/es/terminos/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.oywa.it/pt/termos/"/>
+  </url>
+  <url>
+    <loc>https://www.oywa.it/pt/termos/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.oywa.it/termini/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.oywa.it/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.oywa.it/es/terminos/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.oywa.it/pt/termos/"/>
   </url>
 </urlset>

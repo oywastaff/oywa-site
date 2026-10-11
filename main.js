@@ -25,3 +25,13 @@ document.querySelectorAll('[data-gallery]').forEach((btn) => {
     gallery.scrollBy({ left: dir * 260, behavior: 'smooth' });
   });
 });
+
+// Selettore lingua: ricorda la scelta (unico dato salvato nel browser, vedi cookie policy).
+document.querySelectorAll('.lang a[data-lang]').forEach((a) => {
+  a.addEventListener('click', () => {
+    try { localStorage.setItem('oywa-lang', a.dataset.lang); } catch (e) { /* storage non disponibile */ }
+  });
+});
+document.addEventListener('click', (e) => {
+  document.querySelectorAll('.lang[open]').forEach((d) => { if (!d.contains(e.target)) d.removeAttribute('open'); });
+});
