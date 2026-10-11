@@ -1,5 +1,5 @@
 // Immagine di anteprima 1200x630 per i social.
-// Uso: swift og-image.swift <cartella sito> <file png> <riga1> <riga2> <riga3> <sotto1> <sotto2>
+// Uso: swift og-image.swift <cartella sito> <file png> <riga1> <riga2> <riga3> <sotto1> <sotto2> <cartella schermate>
 import AppKit
 import CoreText
 
@@ -50,8 +50,8 @@ func phone(_ file: String, x: CGFloat, y: CGFloat, w: CGFloat, angle: CGFloat) {
     img.draw(in: screen)
     ctx.restoreGState()
 }
-phone("\(site)/assets/screens/rapido-nome.jpg", x: 700, y: 30, w: 230, angle: 7)
-phone("\(site)/assets/screens/mappa.jpg", x: 900, y: 70, w: 250, angle: -4)
+phone("\(args[8])/rapido-nome.jpg", x: 700, y: 30, w: 230, angle: 7)
+phone("\(args[8])/mappa.jpg", x: 900, y: 70, w: 250, angle: -4)
 
 // Testi.
 func text(_ s: String, font: NSFont, color c: NSColor, x: CGFloat, y: CGFloat, width: CGFloat) {

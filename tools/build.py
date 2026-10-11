@@ -22,7 +22,7 @@ from legal import COOKIE, PRIVACY, TERMS, TOC, TRANSLATION_NOTE, UPDATED  # noqa
 ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://www.oywa.it"
 EMAIL = "staff@oywa.it"
-ASSET_VERSION = "3"
+ASSET_VERSION = "4"
 LASTMOD = "2026-10-11"
 
 ICONS = {
@@ -194,9 +194,16 @@ def footer(lang):
 """
 
 
-def phone(img, alt="", lazy=True):
+def screen(lang, img):
+    """Schermata nella lingua della pagina, se esiste; altrimenti quella italiana."""
+    if lang != "it" and (ROOT / "assets" / "screens" / lang / f"{img}.jpg").exists():
+        return f"/assets/screens/{lang}/{img}.jpg"
+    return f"/assets/screens/{img}.jpg"
+
+
+def phone(lang, img, alt="", lazy=True):
     loading = ' loading="lazy"' if lazy else ""
-    return f'<div class="phone"><img src="/assets/screens/{img}.jpg" alt="{esc(alt)}"{loading}></div>'
+    return f'<div class="phone"><img src="{screen(lang, img)}" alt="{esc(alt)}"{loading}></div>'
 
 
 def feature_row(row, flip, lang):
@@ -207,7 +214,7 @@ def feature_row(row, flip, lang):
     return f"""    <div class="feature{" flip" if flip else ""} reveal">
       <div class="feature-media">
         <div class="blob" style="background:var(--c-{row["color"]})"></div>
-        {phone(row["img"], row["alt"])}
+        {phone(lang, row["img"], row["alt"])}
       </div>
       <div class="feature-text">
         <span class="eyebrow">{esc(row["eyebrow"])}</span>
@@ -248,7 +255,7 @@ def json_ld(lang):
             {"@type": "MobileApplication", "name": "OYWA", "operatingSystem": "iOS, Android",
              "applicationCategory": "TravelApplication", "description": HOME[lang]["desc"],
              "inLanguage": [LANGS[l]["html"] for l in LANGS], "image": f"{SITE}/assets/og-image-{lang}.jpg",
-             "screenshot": [f"{SITE}/assets/screens/{s}.jpg" for s in ("mappa", "rapido-nome", "voto", "paesi")],
+             "screenshot": [SITE + screen(lang, s) for s in ("mappa", "rapido-nome", "voto", "paesi")],
              "publisher": {"@id": SITE + "/#organization"}},
         ],
     }
@@ -266,7 +273,7 @@ def home(lang):
     rows = "".join(feature_row(r, i % 2 == 1, lang) for i, r in enumerate(t["rows"]))
     cats = "".join(f'<span style="--c:var(--c-{col})">{esc(name)}</span>' for col, name in zip(CAT_COLORS, t["cats"]))
     gallery = "".join(
-        f'<figure>{phone(img, alt)}<figcaption>{esc(cap)}<span>{esc(sub)}</span></figcaption></figure>'
+        f'<figure>{phone(lang, img, alt)}<figcaption>{esc(cap)}<span>{esc(sub)}</span></figcaption></figure>'
         for img, cap, sub, alt in GALLERY[lang]
     )
     facts_icons = ["phone", "ban", "download"]
@@ -299,8 +306,8 @@ def home(lang):
         <circle cx="40" cy="600" r="7" fill="#D2785A" opacity=".55"/>
         <path d="M552 30 l18 6 -14 12z" fill="#D2785A" opacity=".55"/>
       </svg>
-      <div class="phone p2"><img src="/assets/screens/voto.jpg" alt=""></div>
-      <div class="phone p1"><img src="/assets/screens/mappa.jpg" alt=""></div>
+      <div class="phone p2"><img src="{screen(lang, "voto")}" alt=""></div>
+      <div class="phone p1"><img src="{screen(lang, "mappa")}" alt=""></div>
       <div class="float-card f1">
         <span class="dot" style="background:var(--c-poi)">{icon("globe")}</span>
         <div><b>{esc(f1b)}</b><span>{esc(f1s)}</span></div>
@@ -514,7 +521,8 @@ def og_images():
     for lang in LANGS:
         t = HOME[lang]
         out = ROOT / "assets" / f"og-image-{lang}.png"
-        subprocess.run(["swift", str(script), str(ROOT), str(out), *t["og_lines"], *t["og_sub"]], check=True)
+        shots = ROOT / "assets" / "screens" / (lang if lang != "it" else "")
+        subprocess.run(["swift", str(script), str(ROOT), str(out), *t["og_lines"], *t["og_sub"], str(shots)], check=True)
         jpg = out.with_suffix(".jpg")
         subprocess.run(["sips", "-s", "format", "jpeg", "-s", "formatOptions", "85", str(out), "--out", str(jpg)],
                        check=True, stdout=subprocess.DEVNULL)
