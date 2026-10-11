@@ -4,59 +4,138 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Informativa sulla privacy – OYWA</title>
+<meta name="description" content="Informativa sulla privacy di OYWA: i dati restano sul tuo dispositivo. Cosa viene inviato a servizi esterni, e quando.">
+<meta name="theme-color" content="#FAF3E6">
 <link rel="icon" href="../assets/app_icon.png">
+<link rel="apple-touch-icon" href="../assets/app_icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-<header class="top"><div class="wrap"><a class="brand" href="../index.html"><img src="../assets/app_icon.png" alt="">OYWA</a><nav><a href="../index.html">Home</a></nav></div></header>
-<main class="wrap doc">
-<h1>Informativa sulla privacy</h1>
-<p class="meta">OYWA · Ultimo aggiornamento: 11 ottobre 2026</p>
+<a class="skip" href="#main">Vai al contenuto</a>
 
-<h2>1. Titolare e contatti</h2>
-<p>OYWA è un'app per archiviare i luoghi visitati nei viaggi. Titolare del trattamento: Giuliano Razzicchia. Per qualsiasi domanda sulla privacy: staff@oywa.it
+<header class="site-header"><div class="wrap">
+  <a class="brand" href="../index.html"><img src="../assets/app_icon.png" alt="">OYWA</a>
+  <nav class="nav" aria-label="Principale">
+    <a href="../index.html">Home</a>
+    <a href="../funzioni.html">Funzioni</a>
+    <a href="./" aria-current="page">Privacy</a>
+    <a class="btn" href="mailto:staff@oywa.it?subject=Voglio%20provare%20OYWA">Prova la beta</a>
+  </nav>
+</div></header>
 
-<h2>2. Principio di base: i dati restano sul tuo dispositivo</h2>
-<p>I dati che inserisci (luoghi, visite, viaggi, città, voti, note e tutto ciò che salvi nell'app) sono conservati esclusivamente nel database locale del tuo telefono. OYWA non ha server propri che ricevono o conservano i tuoi dati, non richiede un account e non richiede il login.</p>
+<main id="main">
 
-<h2>3. Dati inviati a servizi di terze parti</h2>
-<p>Per alcune funzioni l'app contatta servizi esterni. Questi invii avvengono solo quando usi la funzione corrispondente:</p>
-<ul>
-  <li><strong>Mappa (OpenStreetMap).</strong> Le immagini della mappa sono scaricate dai server di OpenStreetMap (tile.openstreetmap.org). Il server riceve l'indirizzo IP del dispositivo e l'area della mappa che stai guardando.</li>
-  <li><strong>Ricerca e geocodifica (Nominatim, OpenStreetMap).</strong> Quando cerchi un luogo, il testo della ricerca viene inviato a nominatim.openstreetmap.org. Quando l'app ricava città e paese da una posizione (per esempio durante l'inserimento di un luogo o l'import di un file), le coordinate vengono inviate allo stesso servizio.</li>
-  <li><strong>App di navigazione.</strong> Quando scegli di aprire un luogo in Mappe, Google Maps o Waze, l'app passa le coordinate a quell'app. Da quel momento si applica la sua informativa.</li>
-</ul>
-<p>OYWA non usa strumenti di analisi, pubblicità, crash reporting o tracciamento di terze parti.</p>
+<div class="page-hero">
+  <div class="wrap reveal">
+    <span class="eyebrow">Privacy</span>
+    <h1>Informativa sulla privacy</h1>
+    <p>OYWA · Ultimo aggiornamento: 11 ottobre 2026</p>
+  </div>
+</div>
 
-<h2>4. Posizione</h2>
-<p>L'app può chiedere l'accesso alla posizione del dispositivo, solo mentre la usi, per compilare automaticamente città e paese quando aggiungi un nuovo luogo. La posizione non viene salvata né inviata a OYWA. Le coordinate vengono usate per la richiesta di geocodifica descritta al punto 3. Puoi negare il permesso in qualsiasi momento dalle impostazioni del telefono; le altre funzioni restano disponibili.</p>
+<div class="wrap">
+  <div class="summary reveal" aria-label="In breve">
+    <div>
+      <i style="background:var(--c-attrazione)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg></i>
+      <b>I dati restano sul telefono</b>
+      <span>Nessun server di OYWA, nessun account, nessun login.</span>
+    </div>
+    <div>
+      <i style="background:var(--c-aereo)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg></i>
+      <b>OpenStreetMap per mappa e ricerca</b>
+      <span>Solo quando usi la funzione corrispondente.</span>
+    </div>
+    <div>
+      <i style="background:var(--c-ristorante)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m4.9 4.9 14.2 14.2"/></svg></i>
+      <b>Niente analisi né pubblicità</b>
+      <span>Nessun tracciamento di terze parti.</span>
+    </div>
+  </div>
 
-<h2>5. Permessi richiesti</h2>
-<ul>
-  <li><strong>Posizione (in uso):</strong> facoltativa, descritta al punto 4.</li>
-  <li><strong>Rete (Internet):</strong> necessaria per la mappa, la ricerca dei luoghi e la geocodifica descritte al punto 3.</li>
-  <li><strong>File:</strong> l'app legge solo i file che scegli tu, per esempio un backup o un file KML/KMZ da importare, e scrive il file di esportazione che poi condividi.</li>
-</ul>
+  <div class="doc-layout">
+    <nav class="toc" aria-label="Indice">
+      <b>Indice</b>
+      <ol>
+        <li><a href="#titolare">1. Titolare e contatti</a></li>
+        <li><a href="#principio">2. I dati restano sul dispositivo</a></li>
+        <li><a href="#terze-parti">3. Servizi di terze parti</a></li>
+        <li><a href="#posizione">4. Posizione</a></li>
+        <li><a href="#permessi">5. Permessi richiesti</a></li>
+        <li><a href="#backup">6. Backup ed esportazione</a></li>
+        <li><a href="#perdita">7. Perdita o disinstallazione</a></li>
+        <li><a href="#conservazione">8. Conservazione e cancellazione</a></li>
+        <li><a href="#minori">9. Minori</a></li>
+        <li><a href="#diritti">10. I tuoi diritti</a></li>
+        <li><a href="#modifiche">11. Modifiche</a></li>
+      </ol>
+    </nav>
 
-<h2>6. Backup ed esportazione</h2>
-<p>Puoi creare un backup completo (file <code>.oywa</code>) o esportare una selezione di luoghi in KML, Excel o PDF. Il file viene creato sul dispositivo e condiviso solo da te, tramite il foglio di condivisione di sistema (per esempio iCloud Drive, Google Drive, mail o messaggi). OYWA non riceve né conserva questi file. Chi riceve un file esportato lo gestisce secondo le proprie regole.</p>
+    <article class="doc">
+      <p class="meta">Questa informativa spiega quali dati tratta l'app OYWA e come.</p>
 
-<h2>7. Perdita del dispositivo o disinstallazione</h2>
-<p>Poiché i dati sono sul dispositivo, OYWA non può recuperarli. Disinstallando l'app senza un backup, i dati vengono persi. Ti consigliamo di esportare un backup periodicamente e di conservarlo in un luogo sicuro.</p>
+      <h2 id="titolare"><span>1.</span>Titolare e contatti</h2>
+      <p>OYWA è un'app per archiviare i luoghi visitati nei viaggi. Titolare del trattamento: Giuliano Razzicchia. Per qualsiasi domanda sulla privacy: <a href="mailto:staff@oywa.it">staff@oywa.it</a>.</p>
 
-<h2>8. Conservazione e cancellazione</h2>
-<p>I dati restano sul dispositivo finché non li elimini tu o disinstalli l'app. Eliminando un luogo o un viaggio, il dato viene rimosso dal database locale. <span class="todo">[Verificare: se esiste la cancellazione totale dei dati dalle impostazioni.]</span></p>
+      <h2 id="principio"><span>2.</span>Principio di base: i dati restano sul tuo dispositivo</h2>
+      <p>I dati che inserisci (luoghi, visite, viaggi, città, voti, note e tutto ciò che salvi nell'app) sono conservati esclusivamente nel database locale del tuo telefono. OYWA non ha server propri che ricevono o conservano i tuoi dati, non richiede un account e non richiede il login.</p>
 
-<h2>9. Minori</h2>
-<p><span class="todo">[Da decidere: l'app è rivolta a un pubblico adulto. Oppure indicare la fascia di età prevista.]</span></p>
+      <h2 id="terze-parti"><span>3.</span>Dati inviati a servizi di terze parti</h2>
+      <p>Per alcune funzioni l'app contatta servizi esterni. Questi invii avvengono solo quando usi la funzione corrispondente:</p>
+      <ul>
+        <li><strong>Mappa (OpenStreetMap).</strong> Le immagini della mappa sono scaricate dai server di OpenStreetMap (tile.openstreetmap.org). Il server riceve l'indirizzo IP del dispositivo e l'area della mappa che stai guardando.</li>
+        <li><strong>Ricerca e geocodifica (Nominatim, OpenStreetMap).</strong> Quando cerchi un luogo, il testo della ricerca viene inviato a nominatim.openstreetmap.org. Quando l'app ricava città e paese da una posizione (per esempio durante l'inserimento di un luogo o l'import di un file), le coordinate vengono inviate allo stesso servizio.</li>
+        <li><strong>App di navigazione.</strong> Quando scegli di aprire un luogo in Mappe, Google Maps o Waze, l'app passa le coordinate a quell'app. Da quel momento si applica la sua informativa.</li>
+      </ul>
+      <p>OYWA non usa strumenti di analisi, pubblicità, crash reporting o tracciamento di terze parti.</p>
 
-<h2>10. I tuoi diritti</h2>
-<p>Ai sensi del Regolamento (UE) 2016/679 (GDPR) hai diritto di accesso, rettifica, cancellazione, limitazione, portabilità e opposizione. Poiché i dati si trovano sul tuo dispositivo, puoi esercitare la maggior parte di questi diritti direttamente nell'app, anche tramite esportazione. Per le richieste che riguardano i dati trattati dai servizi di terze parti indicati al punto 3, rivolgiti direttamente a quei servizi. Hai inoltre diritto di proporre reclamo al Garante per la protezione dei dati personali (garanteprivacy.it).</p>
+      <h2 id="posizione"><span>4.</span>Posizione</h2>
+      <p>L'app può chiedere l'accesso alla posizione del dispositivo, solo mentre la usi, per compilare automaticamente città e paese quando aggiungi un nuovo luogo. La posizione non viene salvata né inviata a OYWA. Le coordinate vengono usate per la richiesta di geocodifica descritta al punto 3. Puoi negare il permesso in qualsiasi momento dalle impostazioni del telefono; le altre funzioni restano disponibili.</p>
 
-<h2>11. Modifiche</h2>
-<p>Se questa informativa cambia, aggiorneremo la data in alto e, nei casi rilevanti, te ne daremo notizia nell'app.</p>
+      <h2 id="permessi"><span>5.</span>Permessi richiesti</h2>
+      <ul>
+        <li><strong>Posizione (in uso):</strong> facoltativa, descritta al punto 4.</li>
+        <li><strong>Rete (Internet):</strong> necessaria per la mappa, la ricerca dei luoghi e la geocodifica descritte al punto 3.</li>
+        <li><strong>File:</strong> l'app legge solo i file che scegli tu, per esempio un backup o un file KML/KMZ da importare, e scrive il file di esportazione che poi condividi.</li>
+      </ul>
 
-<footer class="wrap">OYWA · staff@oywa.it</footer>
+      <h2 id="backup"><span>6.</span>Backup ed esportazione</h2>
+      <p>Puoi creare un backup completo (file <code>.oywa</code>) o esportare una selezione di luoghi in KML, Excel o PDF. Il file viene creato sul dispositivo e condiviso solo da te, tramite il foglio di condivisione di sistema (per esempio iCloud Drive, Google Drive, mail o messaggi). OYWA non riceve né conserva questi file. Chi riceve un file esportato lo gestisce secondo le proprie regole.</p>
+
+      <h2 id="perdita"><span>7.</span>Perdita del dispositivo o disinstallazione</h2>
+      <p>Poiché i dati sono sul dispositivo, OYWA non può recuperarli. Disinstallando l'app senza un backup, i dati vengono persi. Ti consigliamo di esportare un backup periodicamente e di conservarlo in un luogo sicuro.</p>
+
+      <h2 id="conservazione"><span>8.</span>Conservazione e cancellazione</h2>
+      <p>I dati restano sul dispositivo finché non li elimini tu o disinstalli l'app. Eliminando un luogo o un viaggio, il dato viene rimosso dal database locale.</p>
+      <p>Puoi cancellare in qualsiasi momento tutto l'archivio (luoghi, visite, viaggi, città e persone) da <strong>Impostazioni → I tuoi dati → Elimina tutti i dati</strong>. La cancellazione è definitiva: se vuoi conservare i dati, esporta prima un backup. Le preferenze dell'app, come la lingua, restano sul dispositivo finché non disinstalli l'app.</p>
+
+      <h2 id="minori"><span>9.</span>Minori</h2>
+      <p>OYWA è destinata a persone che hanno almeno 16 anni. L'app non chiede l'età e non raccoglie dati sui suoi utenti: quello che inserisci resta sul tuo dispositivo e OYWA non lo riceve.</p>
+
+      <h2 id="diritti"><span>10.</span>I tuoi diritti</h2>
+      <p>Ai sensi del Regolamento (UE) 2016/679 (GDPR) hai diritto di accesso, rettifica, cancellazione, limitazione, portabilità e opposizione. Poiché i dati si trovano sul tuo dispositivo, puoi esercitare la maggior parte di questi diritti direttamente nell'app, anche tramite esportazione. Per le richieste che riguardano i dati trattati dai servizi di terze parti indicati al punto 3, rivolgiti direttamente a quei servizi. Hai inoltre diritto di proporre reclamo al Garante per la protezione dei dati personali (garanteprivacy.it).</p>
+
+      <h2 id="modifiche"><span>11.</span>Modifiche</h2>
+      <p>Se questa informativa cambia, aggiorneremo la data in alto e, nei casi rilevanti, te ne daremo notizia nell'app.</p>
+    </article>
+  </div>
+</div>
 </main>
+
+<footer class="site-footer"><div class="wrap">
+  <div>
+    <a class="brand" href="../index.html"><img src="../assets/app_icon.png" alt="">OYWA</a>
+    <p>© 2026 OYWA · <a href="mailto:staff@oywa.it">staff@oywa.it</a></p>
+  </div>
+  <nav aria-label="Piè di pagina">
+    <a href="../funzioni.html">Funzioni</a>
+    <a href="./">Privacy</a>
+    <a href="mailto:staff@oywa.it">Contatti</a>
+  </nav>
+</div></footer>
+
+<script src="../main.js"></script>
 </body>
 </html>

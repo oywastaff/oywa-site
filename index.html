@@ -4,51 +4,225 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>OYWA – La storia dei tuoi viaggi</title>
-<meta name="description" content="OYWA è un archivio personale dei luoghi visitati nei viaggi. I dati restano sul tuo telefono.">
+<meta name="description" content="OYWA è un archivio personale dei luoghi visitati nei viaggi: mappa, voti, paesi e badge. I dati restano sul tuo telefono.">
+<meta property="og:title" content="OYWA – La storia dei tuoi viaggi">
+<meta property="og:description" content="Il tuo archivio personale dei luoghi visitati. Niente account, niente pubblicità: i dati restano sul tuo telefono.">
+<meta property="og:image" content="https://oywastaff.github.io/oywa-site/assets/screens/mappa.jpg">
+<meta name="theme-color" content="#FAF3E6">
 <link rel="icon" href="assets/app_icon.png">
+<link rel="apple-touch-icon" href="assets/app_icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="top"><div class="wrap">
+<a class="skip" href="#main">Vai al contenuto</a>
+
+<header class="site-header"><div class="wrap">
   <a class="brand" href="index.html"><img src="assets/app_icon.png" alt="">OYWA</a>
-  <nav><a href="#funzioni">Funzioni</a><a href="#dati">I tuoi dati</a><a href="#contatti">Contatti</a></nav>
+  <nav class="nav" aria-label="Principale">
+    <a href="index.html" aria-current="page">Home</a>
+    <a href="funzioni.html">Funzioni</a>
+    <a href="privacy/">Privacy</a>
+    <a class="btn" href="mailto:staff@oywa.it?subject=Voglio%20provare%20OYWA">Prova la beta</a>
+  </nav>
 </div></header>
 
-<main>
-<div class="wrap hero">
-  <span class="tag">In preparazione · versione di test</span>
-  <h1>La storia dei tuoi viaggi,<br>custodita sul tuo telefono.</h1>
-  <p class="lead">OYWA è un archivio personale dei luoghi in cui sei stato: città, hotel, ristoranti, bar, spiagge, monumenti. Non un social, non una guida. Solo la tua memoria, ordinata e sempre a portata di mano.</p>
-  <div class="status">Stiamo preparando la versione di test per iPhone e Android. Scrivici se vuoi provarla: ti avviseremo appena è pronta.</div>
+<main id="main">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">In preparazione · versione di test</span>
+      <h1>La storia dei tuoi viaggi, <em>sul tuo telefono<svg viewBox="0 0 300 20" preserveAspectRatio="none" aria-hidden="true"><path d="M3 14 C 60 4, 120 4, 170 10 S 260 16, 297 6" fill="none" stroke="#D2785A" stroke-width="5" stroke-linecap="round" opacity=".45"/></svg></em>.</h1>
+      <p class="lead">OYWA è il tuo archivio personale dei luoghi visitati: città, hotel, ristoranti, spiagge, monumenti. Non è un social e non è una guida. È la tua memoria di viaggio, in ordine e sempre con te.</p>
+      <div class="actions">
+        <a class="btn" href="mailto:staff@oywa.it?subject=Voglio%20provare%20OYWA">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7z"/></svg>
+          Voglio provarla
+        </a>
+        <a class="btn ghost" href="funzioni.html">Scopri le funzioni</a>
+      </div>
+      <ul class="chips" aria-label="In breve">
+        <li><i style="background:var(--c-attrazione)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></i>Nessun account</li>
+        <li><i style="background:var(--c-aereo)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></i>Niente pubblicità</li>
+        <li><i style="background:var(--c-ristorante)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></i>iPhone e Android</li>
+      </ul>
+    </div>
+
+    <div class="hero-visual reveal" aria-hidden="true">
+      <svg class="route" viewBox="0 0 600 680" fill="none">
+        <path d="M40 600 C 120 420, 60 260, 220 200 S 520 160, 560 40" stroke="#D2785A" stroke-width="2.5" stroke-dasharray="2 12" stroke-linecap="round" opacity=".55"/>
+        <circle cx="40" cy="600" r="7" fill="#D2785A" opacity=".55"/>
+        <path d="M552 30 l18 6 -14 12z" fill="#D2785A" opacity=".55"/>
+      </svg>
+      <div class="phone p2"><img src="assets/screens/voto.jpg" alt=""></div>
+      <div class="phone p1"><img src="assets/screens/mappa.jpg" alt=""></div>
+      <div class="float-card f1">
+        <span class="dot" style="background:var(--c-poi)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg></span>
+        <div><b>8 paesi</b><span>11 città</span></div>
+      </div>
+      <div class="float-card f2">
+        <span class="dot" style="background:#6E8259"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.5 7L12 17.6 5.7 21l1.5-7L2 9.3l7-.8z"/></svg></span>
+        <div><b>Eccellente</b><span>Pastéis de Belém</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STRIP -->
+<div class="strip">
+  <ul class="wrap">
+    <li><b>0</b><span>account da creare</span></li>
+    <li><b>0</b><span>pubblicità e tracciamento</span></li>
+    <li><b>9</b><span>categorie di luoghi</span></li>
+    <li><b>100%</b><span>dati sul tuo telefono</span></li>
+  </ul>
 </div>
 
-<section id="funzioni"><div class="wrap">
-  <h2>Cosa puoi fare</h2>
-  <div class="grid">
-    <div class="card"><h3>Crea i tuoi viaggi</h3><p>Dai un nome al viaggio, scegli mese e anno, e collega i luoghi visitati.</p></div>
-    <div class="card"><h3>Aggiungi luoghi per categoria</h3><p>Ristoranti, hotel, bar, gelaterie, attrazioni, aeroporti e molto altro, con un voto personale.</p></div>
-    <div class="card"><h3>Vedi tutto sulla mappa</h3><p>Ogni categoria ha il suo colore. Trovi a colpo d'occhio dove sei stato.</p></div>
-    <div class="card"><h3>Statistiche sul tuo archivio</h3><p>Quanti paesi, città e luoghi hai visitato, e quali categorie ti sono piaciute di più.</p></div>
-    <div class="card"><h3>Esporta e importa</h3><p>Crea un backup completo e ripristinalo quando vuoi. Esporta selezioni di luoghi in KML, Excel o PDF.</p></div>
+<!-- HIGHLIGHTS -->
+<section id="funzioni">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Cosa puoi fare</span>
+      <h2>Un posto solo per tutti i posti in cui sei stato.</h2>
+      <p>Salvi un luogo una volta sola. Ogni volta che ci torni aggiungi una visita, con il suo voto.</p>
+    </div>
+
+    <div class="feature reveal">
+      <div class="feature-media">
+        <div class="blob" style="background:var(--c-aereo)"></div>
+        <div class="phone"><img src="assets/screens/mappa.jpg" alt="La mappa di OYWA con i luoghi visitati in Europa e i filtri per categoria" loading="lazy"></div>
+      </div>
+      <div class="feature-text">
+        <span class="eyebrow">La mappa</span>
+        <h3>Tutto il tuo mondo, a colpo d'occhio.</h3>
+        <p>La mappa è la home dell'app. Ogni categoria ha il suo colore e la sua icona, e in alto vedi subito quanti viaggi, città e paesi hai collezionato.</p>
+        <ul>
+          <li>Filtri per categoria: un tocco per nascondere, una pressione lunga per vedere solo quella.</li>
+          <li>Cerca tra i tuoi luoghi, città e paesi.</li>
+          <li>Apri un luogo in Mappe, Google Maps o Waze.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="feature flip reveal">
+      <div class="feature-media">
+        <div class="blob" style="background:var(--c-colazione)"></div>
+        <div class="phone"><img src="assets/screens/voto.jpg" alt="Il foglio di una visita con i timbri del voto e la fascia di prezzo" loading="lazy"></div>
+      </div>
+      <div class="feature-text">
+        <span class="eyebrow">Il voto a timbro</span>
+        <h3>Ricordi cosa ti è piaciuto davvero.</h3>
+        <p>Ristoranti, hotel, bar, gelaterie e spiagge si votano con un timbro, come su un passaporto: Pessimo, Medio, Ottimo o Eccellente. Puoi segnare anche la fascia di prezzo.</p>
+        <ul>
+          <li>Ogni visita ha mese, anno, voto e note.</li>
+          <li>Collega la visita a un viaggio, per esempio “Estate in Sicilia”.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="feature reveal">
+      <div class="feature-media">
+        <div class="blob" style="background:var(--c-hotel)"></div>
+        <div class="phone"><img src="assets/screens/paesi.jpg" alt="La schermata dei paesi visitati con la mappa del mondo e le percentuali per continente" loading="lazy"></div>
+      </div>
+      <div class="feature-text">
+        <span class="eyebrow">Paesi e badge</span>
+        <h3>Guarda crescere il tuo planisfero.</h3>
+        <p>I paesi che hai visitato si colorano sulla mappa del mondo, con la percentuale per ogni continente. Le categorie sbloccano badge a tre livelli: Timbro, Visto e Lasciapassare.</p>
+        <p><a href="funzioni.html">Tutte le funzioni →</a></p>
+      </div>
+    </div>
+
+    <div class="cats reveal" aria-label="Categorie">
+      <span style="--c:var(--c-citta)">Città</span>
+      <span style="--c:var(--c-hotel)">Hotel e B&amp;B</span>
+      <span style="--c:var(--c-ristorante)">Ristoranti</span>
+      <span style="--c:var(--c-bar)">Pub e bar</span>
+      <span style="--c:var(--c-colazione)">Colazione</span>
+      <span style="--c:var(--c-gelato)">Gelaterie</span>
+      <span style="--c:var(--c-poi)">Monumenti e spiagge</span>
+      <span style="--c:var(--c-attrazione)">Stadi ed eventi</span>
+      <span style="--c:var(--c-aereo)">Aeroporti e stazioni</span>
+    </div>
   </div>
-</div></section>
+</section>
 
-<section id="dati"><div class="wrap">
-  <h2>I tuoi dati restano tuoi</h2>
-  <p>OYWA non ha un server che raccoglie i tuoi viaggi. Non serve un account, non c'è pubblicità e non c'è tracciamento. I luoghi, le visite e i voti sono salvati sul tuo dispositivo.</p>
-  <p>Per mostrare la mappa e cercare un luogo, l'app usa OpenStreetMap. Ti spieghiamo esattamente cosa viene inviato, e quando, nella <a href="privacy/">informativa sulla privacy</a>.</p>
-  <p><a class="btn ghost" href="privacy/">Leggi l'informativa sulla privacy</a></p>
-</div></section>
+<!-- GALLERY -->
+<section class="gallery-section">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Dentro l'app</span>
+      <h2>Fatta come un poster di viaggio.</h2>
+      <p>Colori pastello, forme morbide e timbri: un archivio che hai voglia di aprire.</p>
+    </div>
+  </div>
+  <div class="gallery reveal" tabindex="0" aria-label="Schermate dell'app">
+    <figure><div class="phone"><img src="assets/screens/splash.jpg" alt="Schermata di avvio di OYWA con l'illustrazione del passaporto" loading="lazy"></div><figcaption>Benvenuto<span>Il tuo passaporto dei viaggi</span></figcaption></figure>
+    <figure><div class="phone"><img src="assets/screens/mappa.jpg" alt="Mappa con i luoghi visitati" loading="lazy"></div><figcaption>Mappa<span>Filtri per categoria</span></figcaption></figure>
+    <figure><div class="phone"><img src="assets/screens/scheda.jpg" alt="Scheda rapida del Pantheon sulla mappa di Roma" loading="lazy"></div><figcaption>Scheda luogo<span>Apri o raggiungi</span></figcaption></figure>
+    <figure><div class="phone"><img src="assets/screens/luoghi.jpg" alt="Elenco dei luoghi con icone e timbri" loading="lazy"></div><figcaption>I miei luoghi<span>Cerca, filtra, esporta</span></figcaption></figure>
+    <figure><div class="phone"><img src="assets/screens/voto.jpg" alt="Voto a timbro di una visita" loading="lazy"></div><figcaption>Visita<span>Voto e prezzo</span></figcaption></figure>
+    <figure><div class="phone"><img src="assets/screens/viaggi.jpg" alt="Elenco dei viaggi" loading="lazy"></div><figcaption>Viaggi<span>Raggruppa le visite</span></figcaption></figure>
+    <figure><div class="phone"><img src="assets/screens/paesi.jpg" alt="Paesi visitati nel mondo" loading="lazy"></div><figcaption>Paesi<span>Per continente</span></figcaption></figure>
+    <figure><div class="phone"><img src="assets/screens/badge.jpg" alt="Badge sbloccati" loading="lazy"></div><figcaption>Badge<span>Timbro, Visto, Lasciapassare</span></figcaption></figure>
+  </div>
+  <div class="gallery-nav">
+    <button type="button" data-gallery="prev" aria-label="Schermata precedente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+    <button type="button" data-gallery="next" aria-label="Schermata successiva"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></button>
+  </div>
+</section>
 
-<section id="contatti"><div class="wrap">
-  <h2>Contatti</h2>
-  <p>Vuoi provare la versione di test o hai una domanda? Scrivici a staff@oywa.it.</p>
-</div></section>
+<!-- PRIVACY BAND -->
+<section class="night" id="dati">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">I tuoi dati restano tuoi</span>
+      <h2>I tuoi luoghi. Solo tuoi. Per sempre.</h2>
+      <p>OYWA non ha un server che raccoglie i tuoi viaggi. I luoghi, le visite e i voti sono salvati sul tuo dispositivo.</p>
+      <ul class="facts">
+        <li><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg></i><span><b>Tutto sul telefono.</b> Niente account e niente login.</span></li>
+        <li><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m4.9 4.9 14.2 14.2"/></svg></i><span><b>Nessuna pubblicità</b> e nessun tracciamento.</span></li>
+        <li><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg></i><span><b>Backup quando vuoi,</b> in un file che tieni tu.</span></li>
+      </ul>
+      <p>Per mostrare la mappa e cercare un luogo l'app usa OpenStreetMap. Cosa viene inviato, e quando, è spiegato nell'<a href="privacy/">informativa sulla privacy</a>.</p>
+    </div>
+    <img class="poster reveal" src="assets/illustrazione.png" alt="Illustrazione di OYWA: un passaporto aperto circondato da Colosseo, valigia, treno, aereo e ombrellone" loading="lazy">
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="contatti">
+  <div class="wrap">
+    <div class="cta reveal">
+      <div>
+        <h2>Vuoi provarla per primo?</h2>
+        <p>Stiamo preparando la versione di test per iPhone e Android. Scrivici: ti avvisiamo appena è pronta. Puoi usare lo stesso indirizzo anche per qualsiasi domanda.</p>
+      </div>
+      <a class="btn" href="mailto:staff@oywa.it?subject=Voglio%20provare%20OYWA">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+        staff@oywa.it
+      </a>
+    </div>
+  </div>
+</section>
 </main>
 
-<footer><div class="wrap">
-  <span>© 2026 OYWA</span>
-  <span><a href="privacy/">Privacy</a> · <a href="#contatti">Contatti</a></span>
+<footer class="site-footer"><div class="wrap">
+  <div>
+    <a class="brand" href="index.html"><img src="assets/app_icon.png" alt="">OYWA</a>
+    <p>© 2026 OYWA · La storia dei tuoi viaggi</p>
+  </div>
+  <nav aria-label="Piè di pagina">
+    <a href="funzioni.html">Funzioni</a>
+    <a href="privacy/">Privacy</a>
+    <a href="mailto:staff@oywa.it">Contatti</a>
+  </nav>
 </div></footer>
+
+<script src="main.js"></script>
 </body>
 </html>
