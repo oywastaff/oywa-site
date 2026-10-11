@@ -332,7 +332,7 @@ TERMS = {
         "intro": "Questi termini regolano l'uso dell'app OYWA e del sito www.oywa.it. Usandoli, li accetti.",
         "sections": [
             ("chi", "Chi siamo",
-             "<p>OYWA è un progetto di Giuliano Razzicchia (di seguito «noi»). Per qualsiasi comunicazione: {MAIL}.</p>"),
+             "<p>OYWA è il progetto che sviluppa l'app OYWA e il sito www.oywa.it (di seguito «noi»). I dati del titolare sono indicati nell'<a href=\"{PRIVACY}\">informativa sulla privacy</a>. Per qualsiasi comunicazione: {MAIL}.</p>"),
             ("requisiti", "Chi può usare OYWA",
              "<p>OYWA è destinata a persone che hanno almeno 16 anni. Usando l'app confermi di avere almeno questa età.</p>"),
             ("servizio", "Il servizio",
@@ -365,7 +365,7 @@ TERMS = {
         "intro": "These terms govern the use of the OYWA app and the www.oywa.it website. By using them, you accept these terms.",
         "sections": [
             ("chi", "Who we are",
-             "<p>OYWA is a project by Giuliano Razzicchia (“we”). For any communication: {MAIL}.</p>"),
+             "<p>OYWA is the project that develops the OYWA app and the www.oywa.it website (“we”). The controller's details are given in the <a href=\"{PRIVACY}\">privacy policy</a>. For any communication: {MAIL}.</p>"),
             ("requisiti", "Who can use OYWA",
              "<p>OYWA is intended for people aged 16 or over. By using the app you confirm that you are at least that age.</p>"),
             ("servizio", "The service",
@@ -398,7 +398,7 @@ TERMS = {
         "intro": "Estos términos regulan el uso de la app OYWA y del sitio www.oywa.it. Al usarlos, los aceptas.",
         "sections": [
             ("chi", "Quiénes somos",
-             "<p>OYWA es un proyecto de Giuliano Razzicchia («nosotros»). Para cualquier comunicación: {MAIL}.</p>"),
+             "<p>OYWA es el proyecto que desarrolla la app OYWA y el sitio www.oywa.it («nosotros»). Los datos del responsable figuran en la <a href=\"{PRIVACY}\">política de privacidad</a>. Para cualquier comunicación: {MAIL}.</p>"),
             ("requisiti", "Quién puede usar OYWA",
              "<p>OYWA está destinada a personas de al menos 16 años. Al usar la app confirmas que tienes al menos esa edad.</p>"),
             ("servizio", "El servicio",
@@ -431,7 +431,7 @@ TERMS = {
         "intro": "Estes termos regulam o uso do app OYWA e do site www.oywa.it. Ao usá-los, você os aceita.",
         "sections": [
             ("chi", "Quem somos",
-             "<p>O OYWA é um projeto de Giuliano Razzicchia (“nós”). Para qualquer comunicação: {MAIL}.</p>"),
+             "<p>O OYWA é o projeto que desenvolve o app OYWA e o site www.oywa.it (“nós”). Os dados do controlador estão na <a href=\"{PRIVACY}\">política de privacidade</a>. Para qualquer comunicação: {MAIL}.</p>"),
             ("requisiti", "Quem pode usar o OYWA",
              "<p>O OYWA é destinado a pessoas com pelo menos 16 anos. Ao usar o app você confirma ter pelo menos essa idade.</p>"),
             ("servizio", "O serviço",

@@ -180,7 +180,6 @@ def footer(lang):
   </nav>
   <div class="legal">
     <span>© 2026 OYWA</span>
-    <span>{esc(c["owner"])}</span>
     <a href="{url(lang, "privacy")}">{esc(c["privacy"])}</a>
     <a href="{url(lang, "cookie")}">{esc(c["cookie"])}</a>
     <a href="{url(lang, "terms")}">{esc(c["terms"])}</a>
