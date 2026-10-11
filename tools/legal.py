@@ -27,13 +27,13 @@ TRANSLATION_NOTE = {
 PRIVACY = {
     "it": {
         "title": "Informativa sulla privacy – OYWA",
-        "desc": "Informativa sulla privacy dell'app OYWA e del sito www.oywa.it: i dati dell'app restano sul tuo dispositivo, il sito non usa cookie né tracciamento.",
+        "desc": "Informativa sulla privacy dell'app OYWA e del sito www.oywa.it: i dati dell'app restano sul tuo dispositivo, il sito non usa cookie e conta le visite in forma anonima.",
         "h1": "Informativa sulla privacy",
         "intro": "Questa informativa spiega quali dati trattano l'app OYWA e il sito www.oywa.it, e come.",
         "summary": [
             ("attrazione", "phone", "I dati restano sul telefono", "Nessun server di OYWA, nessun account, nessun login."),
             ("aereo", "globe", "OpenStreetMap per mappa e ricerca", "Solo quando usi la funzione corrispondente."),
-            ("ristorante", "ban", "Niente cookie, analisi né pubblicità", "Né nell'app né sul sito."),
+            ("ristorante", "ban", "Niente cookie né pubblicità", "Sul sito solo un conteggio anonimo delle visite."),
         ],
         "sections": [
             ("titolare", "Titolare e contatti",
@@ -61,8 +61,10 @@ PRIVACY = {
              "<p>I dati restano sul dispositivo finché non li elimini tu o disinstalli l'app. Eliminando un luogo o un viaggio, il dato viene rimosso dal database locale.</p>"
              "<p>Puoi cancellare in qualsiasi momento tutto l'archivio (luoghi, visite, viaggi, città e persone) da <strong>Impostazioni → I tuoi dati → Elimina tutti i dati</strong>. La cancellazione è definitiva: se vuoi conservare i dati, esporta prima un backup. Le preferenze dell'app, come la lingua, restano sul dispositivo finché non disinstalli l'app.</p>"),
             ("sito", "Il sito www.oywa.it",
-             "<p>Il sito è ospitato da GitHub Pages, un servizio di GitHub, Inc. (Stati Uniti). Quando visiti il sito, i server di GitHub registrano l'indirizzo IP e alcuni dati tecnici della richiesta (browser, pagina richiesta, data e ora) per fornire il servizio e per motivi di sicurezza. Il titolare non ha accesso a questi registri e non li usa. GitHub aderisce all'EU-U.S. Data Privacy Framework; maggiori informazioni sono nell'informativa sulla privacy di GitHub.</p>"
-             "<p>Il sito non usa cookie, strumenti di analisi o pubblicità e non carica risorse da server di terze parti: anche i caratteri tipografici sono ospitati sul sito stesso. I dettagli sono nella <a href=\"{COOKIE}\">cookie policy</a>.</p>"),
+             "<p><strong>Hosting.</strong> Il sito è ospitato da GitHub Pages, un servizio di GitHub, Inc. (Stati Uniti). Quando visiti il sito, i server di GitHub registrano l'indirizzo IP e alcuni dati tecnici della richiesta (browser, pagina richiesta, data e ora) per fornire il servizio e per motivi di sicurezza. Il titolare non ha accesso a questi registri e non li usa. GitHub aderisce all'EU-U.S. Data Privacy Framework; maggiori informazioni sono nell'informativa sulla privacy di GitHub.</p>"
+             "<p><strong>Statistiche delle visite (GoatCounter).</strong> Per sapere quante persone visitano il sito usiamo GoatCounter (goatcounter.com), un servizio di statistiche che non usa cookie e non salva nulla sul tuo dispositivo. Quando apri una pagina, il servizio riceve la pagina visitata, il sito da cui arrivi, il tipo di browser e di sistema operativo, le dimensioni dello schermo e il paese, ricavato dall'indirizzo IP. L'indirizzo IP non viene conservato: per distinguere le visite il servizio usa un codice anonimo che cambia ogni giorno, e noi vediamo solo dati aggregati (per esempio «120 visite da Italia, 40 da Spagna»). Non è possibile risalire a chi ha visitato il sito e i dati non vengono usati per pubblicità o profilazione.</p>"
+             "<p>La base giuridica è il nostro legittimo interesse a capire quante persone visitano il sito e quali pagine leggono (art. 6, par. 1, lett. f, GDPR). Puoi bloccare il conteggio con un blocco contenuti del browser; il sito funziona comunque.</p>"
+             "<p>Il sito non usa cookie né pubblicità. I caratteri tipografici sono ospitati sul sito stesso. I dettagli sono nella <a href=\"{COOKIE}\">cookie policy</a>.</p>"),
             ("email", "Email e richieste per la versione di test",
              "<p>Se ci scrivi a {MAIL}, per esempio per partecipare alla versione di test, trattiamo il tuo indirizzo email, il nome se lo indichi e il contenuto del messaggio. Li usiamo solo per risponderti e, se lo chiedi, per avvisarti quando la versione di test è disponibile e inviarti le istruzioni per installarla.</p>"
              "<p>La base giuridica è la tua richiesta (art. 6, par. 1, lett. b, GDPR) e, per gli avvisi sulla versione di test, il tuo consenso (lett. a), che puoi revocare in ogni momento. La posta elettronica è gestita dal fornitore Register S.p.A. (Italia). Conserviamo questi dati per il tempo necessario a gestire la richiesta e, per chi partecipa ai test, fino alla fine della fase di test. Non li cediamo a terzi e non li usiamo per marketing.</p>"),
@@ -76,13 +78,13 @@ PRIVACY = {
     },
     "en": {
         "title": "Privacy policy – OYWA",
-        "desc": "Privacy policy of the OYWA app and of www.oywa.it: the app's data stays on your device, and the website uses no cookies or tracking.",
+        "desc": "Privacy policy of the OYWA app and of www.oywa.it: the app's data stays on your device, and the website uses no cookies and only counts visits anonymously.",
         "h1": "Privacy policy",
         "intro": "This policy explains what data the OYWA app and the www.oywa.it website process, and how.",
         "summary": [
             ("attrazione", "phone", "Your data stays on your phone", "No OYWA servers, no account, no login."),
             ("aereo", "globe", "OpenStreetMap for maps and search", "Only when you use that feature."),
-            ("ristorante", "ban", "No cookies, analytics or ads", "Neither in the app nor on the website."),
+            ("ristorante", "ban", "No cookies or ads", "The website only counts visits anonymously."),
         ],
         "sections": [
             ("titolare", "Controller and contact",
@@ -110,8 +112,10 @@ PRIVACY = {
              "<p>The data stays on your device until you delete it or uninstall the app. When you delete a place or a trip, it is removed from the local database.</p>"
              "<p>You can delete your whole archive (places, visits, trips, cities and people) at any time from <strong>Settings → Your data → Delete all data</strong>. Deletion is permanent: if you want to keep your data, export a backup first. App preferences, such as the language, remain on the device until you uninstall the app.</p>"),
             ("sito", "The www.oywa.it website",
-             "<p>The website is hosted on GitHub Pages, a service of GitHub, Inc. (United States). When you visit the site, GitHub's servers log your IP address and some technical data about the request (browser, page requested, date and time) to provide the service and for security purposes. The controller has no access to these logs and does not use them. GitHub participates in the EU-U.S. Data Privacy Framework; more information is in GitHub's privacy statement.</p>"
-             "<p>The website uses no cookies, analytics or advertising and loads no resources from third-party servers: even the fonts are hosted on the site itself. Details are in the <a href=\"{COOKIE}\">cookie policy</a>.</p>"),
+             "<p><strong>Hosting.</strong> The website is hosted on GitHub Pages, a service of GitHub, Inc. (United States). When you visit the site, GitHub's servers log your IP address and some technical data about the request (browser, page requested, date and time) to provide the service and for security purposes. The controller has no access to these logs and does not use them. GitHub participates in the EU-U.S. Data Privacy Framework; more information is in GitHub's privacy statement.</p>"
+             "<p><strong>Visit statistics (GoatCounter).</strong> To know how many people visit the site we use GoatCounter (goatcounter.com), an analytics service that uses no cookies and stores nothing on your device. When you open a page, the service receives the page visited, the site you came from, the type of browser and operating system, the screen size and the country, derived from your IP address. The IP address is not stored: to tell visits apart the service uses an anonymous code that changes every day, and we only see aggregated data (for example “120 visits from Italy, 40 from Spain”). It is not possible to identify who visited the site, and the data is not used for advertising or profiling.</p>"
+             "<p>The legal basis is our legitimate interest in knowing how many people visit the site and which pages they read (Art. 6(1)(f) GDPR). You can block the count with a content blocker in your browser; the site works anyway.</p>"
+             "<p>The website uses no cookies or advertising. The fonts are hosted on the site itself. Details are in the <a href=\"{COOKIE}\">cookie policy</a>.</p>"),
             ("email", "Email and requests for the test version",
              "<p>If you write to us at {MAIL}, for example to join the test version, we process your email address, your name if you give it and the content of your message. We use them only to reply to you and, if you ask, to let you know when the test version is available and send you the instructions to install it.</p>"
              "<p>The legal basis is your request (Art. 6(1)(b) GDPR) and, for notifications about the test version, your consent (Art. 6(1)(a)), which you can withdraw at any time. Email is handled by the provider Register S.p.A. (Italy). We keep this data for as long as needed to handle your request and, for testers, until the end of the test phase. We do not share it with third parties and do not use it for marketing.</p>"),
@@ -125,13 +129,13 @@ PRIVACY = {
     },
     "es": {
         "title": "Política de privacidad – OYWA",
-        "desc": "Política de privacidad de la app OYWA y de www.oywa.it: los datos de la app se quedan en tu dispositivo y el sitio web no usa cookies ni rastreo.",
+        "desc": "Política de privacidad de la app OYWA y de www.oywa.it: los datos de la app se quedan en tu dispositivo y el sitio web no usa cookies y cuenta las visitas de forma anónima.",
         "h1": "Política de privacidad",
         "intro": "Esta política explica qué datos tratan la app OYWA y el sitio web www.oywa.it, y cómo.",
         "summary": [
             ("attrazione", "phone", "Los datos se quedan en el teléfono", "Sin servidores de OYWA, sin cuenta, sin inicio de sesión."),
             ("aereo", "globe", "OpenStreetMap para mapa y búsqueda", "Solo cuando usas esa función."),
-            ("ristorante", "ban", "Sin cookies, analítica ni publicidad", "Ni en la app ni en el sitio web."),
+            ("ristorante", "ban", "Sin cookies ni publicidad", "El sitio web solo cuenta las visitas de forma anónima."),
         ],
         "sections": [
             ("titolare", "Responsable y contacto",
@@ -159,8 +163,10 @@ PRIVACY = {
              "<p>Los datos permanecen en el dispositivo hasta que los eliminas o desinstalas la app. Al eliminar un lugar o un viaje, se borra de la base de datos local.</p>"
              "<p>Puedes borrar en cualquier momento todo tu archivo (lugares, visitas, viajes, ciudades y personas) desde <strong>Ajustes → Tus datos → Eliminar todos los datos</strong>. La eliminación es definitiva: si quieres conservar los datos, exporta antes una copia de seguridad. Las preferencias de la app, como el idioma, permanecen en el dispositivo hasta que desinstalas la app.</p>"),
             ("sito", "El sitio web www.oywa.it",
-             "<p>El sitio está alojado en GitHub Pages, un servicio de GitHub, Inc. (Estados Unidos). Cuando visitas el sitio, los servidores de GitHub registran la dirección IP y algunos datos técnicos de la solicitud (navegador, página solicitada, fecha y hora) para prestar el servicio y por motivos de seguridad. El responsable no tiene acceso a estos registros y no los utiliza. GitHub está adherido al EU-U.S. Data Privacy Framework; encontrarás más información en la declaración de privacidad de GitHub.</p>"
-             "<p>El sitio no usa cookies, herramientas de analítica ni publicidad, y no carga recursos de servidores de terceros: incluso las fuentes tipográficas están alojadas en el propio sitio. Los detalles están en la <a href=\"{COOKIE}\">política de cookies</a>.</p>"),
+             "<p><strong>Alojamiento.</strong> El sitio está alojado en GitHub Pages, un servicio de GitHub, Inc. (Estados Unidos). Cuando visitas el sitio, los servidores de GitHub registran la dirección IP y algunos datos técnicos de la solicitud (navegador, página solicitada, fecha y hora) para prestar el servicio y por motivos de seguridad. El responsable no tiene acceso a estos registros y no los utiliza. GitHub está adherido al EU-U.S. Data Privacy Framework; encontrarás más información en la declaración de privacidad de GitHub.</p>"
+             "<p><strong>Estadísticas de visitas (GoatCounter).</strong> Para saber cuántas personas visitan el sitio usamos GoatCounter (goatcounter.com), un servicio de estadísticas que no usa cookies y no guarda nada en tu dispositivo. Cuando abres una página, el servicio recibe la página visitada, el sitio desde el que llegas, el tipo de navegador y de sistema operativo, el tamaño de la pantalla y el país, deducido de la dirección IP. La dirección IP no se conserva: para distinguir las visitas el servicio usa un código anónimo que cambia cada día, y nosotros solo vemos datos agregados (por ejemplo «120 visitas desde Italia, 40 desde España»). No es posible saber quién ha visitado el sitio y los datos no se usan para publicidad ni para elaborar perfiles.</p>"
+             "<p>La base jurídica es nuestro interés legítimo en saber cuántas personas visitan el sitio y qué páginas leen (art. 6, apdo. 1, letra f, RGPD). Puedes bloquear el recuento con un bloqueador de contenidos del navegador; el sitio funciona igualmente.</p>"
+             "<p>El sitio no usa cookies ni publicidad. Las fuentes tipográficas están alojadas en el propio sitio. Los detalles están en la <a href=\"{COOKIE}\">política de cookies</a>.</p>"),
             ("email", "Correo electrónico y solicitudes para la versión de prueba",
              "<p>Si nos escribes a {MAIL}, por ejemplo para participar en la versión de prueba, tratamos tu dirección de correo, tu nombre si lo indicas y el contenido del mensaje. Solo los usamos para responderte y, si lo pides, para avisarte cuando la versión de prueba esté disponible y enviarte las instrucciones para instalarla.</p>"
              "<p>La base jurídica es tu solicitud (art. 6, apdo. 1, letra b, RGPD) y, para los avisos sobre la versión de prueba, tu consentimiento (letra a), que puedes retirar en cualquier momento. El correo electrónico lo gestiona el proveedor Register S.p.A. (Italia). Conservamos estos datos el tiempo necesario para gestionar la solicitud y, para quienes participan en las pruebas, hasta el final de la fase de prueba. No los cedemos a terceros ni los usamos para marketing.</p>"),
@@ -174,13 +180,13 @@ PRIVACY = {
     },
     "pt": {
         "title": "Política de privacidade – OYWA",
-        "desc": "Política de privacidade do app OYWA e do site www.oywa.it: os dados do app ficam no seu dispositivo e o site não usa cookies nem rastreamento.",
+        "desc": "Política de privacidade do app OYWA e do site www.oywa.it: os dados do app ficam no seu dispositivo e o site não usa cookies e conta as visitas de forma anônima.",
         "h1": "Política de privacidade",
         "intro": "Esta política explica quais dados o app OYWA e o site www.oywa.it tratam, e como.",
         "summary": [
             ("attrazione", "phone", "Os dados ficam no celular", "Sem servidores do OYWA, sem conta, sem login."),
             ("aereo", "globe", "OpenStreetMap para mapa e busca", "Só quando você usa a função correspondente."),
-            ("ristorante", "ban", "Sem cookies, análises ou anúncios", "Nem no app nem no site."),
+            ("ristorante", "ban", "Sem cookies nem anúncios", "O site só conta as visitas de forma anônima."),
         ],
         "sections": [
             ("titolare", "Controlador e contato",
@@ -208,8 +214,10 @@ PRIVACY = {
              "<p>Os dados ficam no dispositivo até você apagá-los ou desinstalar o app. Ao apagar um lugar ou uma viagem, o dado é removido do banco de dados local.</p>"
              "<p>Você pode apagar a qualquer momento todo o seu arquivo (lugares, visitas, viagens, cidades e pessoas) em <strong>Definições → Seus dados → Apagar todos os dados</strong>. A exclusão é definitiva: se quiser guardar os dados, exporte antes um backup. As preferências do app, como o idioma, ficam no dispositivo até você desinstalar o app.</p>"),
             ("sito", "O site www.oywa.it",
-             "<p>O site é hospedado no GitHub Pages, um serviço da GitHub, Inc. (Estados Unidos). Quando você visita o site, os servidores do GitHub registram o endereço IP e alguns dados técnicos da solicitação (navegador, página solicitada, data e hora) para prestar o serviço e por motivos de segurança. O controlador não tem acesso a esses registros e não os utiliza. O GitHub aderiu ao EU-U.S. Data Privacy Framework; mais informações estão na declaração de privacidade do GitHub.</p>"
-             "<p>O site não usa cookies, ferramentas de análise ou publicidade e não carrega recursos de servidores de terceiros: até as fontes tipográficas ficam hospedadas no próprio site. Os detalhes estão na <a href=\"{COOKIE}\">política de cookies</a>.</p>"),
+             "<p><strong>Hospedagem.</strong> O site é hospedado no GitHub Pages, um serviço da GitHub, Inc. (Estados Unidos). Quando você visita o site, os servidores do GitHub registram o endereço IP e alguns dados técnicos da solicitação (navegador, página solicitada, data e hora) para prestar o serviço e por motivos de segurança. O controlador não tem acesso a esses registros e não os utiliza. O GitHub aderiu ao EU-U.S. Data Privacy Framework; mais informações estão na declaração de privacidade do GitHub.</p>"
+             "<p><strong>Estatísticas de visitas (GoatCounter).</strong> Para saber quantas pessoas visitam o site usamos o GoatCounter (goatcounter.com), um serviço de estatísticas que não usa cookies e não salva nada no seu dispositivo. Quando você abre uma página, o serviço recebe a página visitada, o site de onde você veio, o tipo de navegador e de sistema operacional, o tamanho da tela e o país, obtido a partir do endereço IP. O endereço IP não é guardado: para distinguir as visitas o serviço usa um código anônimo que muda todos os dias, e nós vemos apenas dados agregados (por exemplo “120 visitas da Itália, 40 da Espanha”). Não é possível saber quem visitou o site, e os dados não são usados para publicidade nem para criar perfis.</p>"
+             "<p>A base legal é o nosso legítimo interesse em saber quantas pessoas visitam o site e quais páginas leem (art. 6.º, n.º 1, alínea f, do RGPD). Você pode bloquear a contagem com um bloqueador de conteúdo do navegador; o site funciona do mesmo jeito.</p>"
+             "<p>O site não usa cookies nem publicidade. As fontes tipográficas ficam hospedadas no próprio site. Os detalhes estão na <a href=\"{COOKIE}\">política de cookies</a>.</p>"),
             ("email", "E-mail e pedidos para a versão de teste",
              "<p>Se você nos escrever em {MAIL}, por exemplo para participar da versão de teste, tratamos o seu endereço de e-mail, o seu nome se você informar e o conteúdo da mensagem. Usamos esses dados só para responder e, se você pedir, para avisar quando a versão de teste estiver disponível e enviar as instruções de instalação.</p>"
              "<p>A base legal é o seu pedido (art. 6.º, n.º 1, alínea b, do RGPD) e, para os avisos sobre a versão de teste, o seu consentimento (alínea a), que você pode retirar a qualquer momento. O e-mail é gerenciado pelo provedor Register S.p.A. (Itália). Guardamos esses dados pelo tempo necessário para atender ao pedido e, para quem participa dos testes, até o fim da fase de testes. Não os repassamos a terceiros e não os usamos para marketing.</p>"),
@@ -236,12 +244,13 @@ COOKIE = {
             ("cosa", "Cosa sono i cookie",
              "<p>I cookie sono piccoli file di testo che un sito salva nel browser di chi lo visita. Strumenti simili sono il localStorage e le altre forme di memorizzazione locale del browser. Possono servire a far funzionare il sito (strumenti tecnici) oppure a misurare le visite o a mostrare pubblicità (strumenti analitici e di profilazione).</p>"),
             ("sito", "Cookie usati da www.oywa.it",
-             "<p>Nessuno. Il sito www.oywa.it non installa cookie tecnici, analitici, di profilazione o di terze parti.</p>"),
+             "<p>Nessuno. Il sito www.oywa.it non installa cookie tecnici, analitici, di profilazione o di terze parti. Anche le statistiche delle visite funzionano senza cookie (vedi punto 4).</p>"),
             ("locale", "Memorizzazione locale: la lingua",
              "<p>Se scegli una lingua dal menu in alto, il sito ricorda la scelta salvando nel tuo browser la voce <code>oywa-lang</code> (per esempio «en»). Serve solo a mostrarti il sito nella lingua che hai scelto: non contiene dati personali, non viene inviata a nessun server e resta finché non la cancelli dalle impostazioni del browser. Se non usi il menu, non viene salvato nulla.</p>"
              "<p>È uno strumento tecnico necessario a fornire una funzione che hai richiesto tu, quindi non serve il consenso (art. 122 del Codice in materia di protezione dei dati personali e Linee guida del Garante sui cookie del 10 giugno 2021).</p>"),
-            ("terze", "Servizi e contenuti di terze parti",
-             "<p>Il sito non incorpora contenuti di terze parti come mappe, video, pulsanti dei social o caratteri tipografici esterni: tutto è servito dal sito stesso. Il servizio di hosting, GitHub Pages, non installa cookie; tratta l'indirizzo IP come descritto nell'<a href=\"{PRIVACY}\">informativa sulla privacy</a>.</p>"),
+            ("terze", "Statistiche delle visite e servizi di terze parti",
+             "<p>Per contare le visite il sito usa GoatCounter, un servizio di statistiche che non installa cookie e non salva nulla nel tuo browser: non legge né scrive informazioni sul tuo dispositivo e non ti identifica. Per questo non serve il consenso. Come funziona e quali dati riceve è spiegato nell'<a href=\"{PRIVACY}\">informativa sulla privacy</a>.</p>"
+             "<p>Il sito non incorpora altri contenuti di terze parti come mappe, video, pulsanti dei social o caratteri tipografici esterni. Il servizio di hosting, GitHub Pages, non installa cookie.</p>"),
             ("app", "L'app OYWA",
              "<p>Anche l'app OYWA non usa cookie né strumenti di tracciamento. Come tratta i dati è spiegato nell'<a href=\"{PRIVACY}\">informativa sulla privacy</a>.</p>"),
             ("gestire", "Come gestire cookie e memorizzazione locale",
@@ -259,12 +268,13 @@ COOKIE = {
             ("cosa", "What cookies are",
              "<p>Cookies are small text files that a website stores in its visitors' browsers. Similar tools include localStorage and other forms of browser storage. They can be used to make the site work (technical tools) or to measure visits and show ads (analytics and profiling tools).</p>"),
             ("sito", "Cookies used by www.oywa.it",
-             "<p>None. The www.oywa.it website sets no technical, analytics, profiling or third-party cookies.</p>"),
+             "<p>None. The www.oywa.it website sets no technical, analytics, profiling or third-party cookies. Visit statistics also work without cookies (see section 4).</p>"),
             ("locale", "Local storage: language",
              "<p>If you pick a language from the menu at the top, the site remembers your choice by saving the item <code>oywa-lang</code> in your browser (for example “en”). It is only used to show you the site in the language you chose: it contains no personal data, is never sent to any server and stays until you delete it in your browser settings. If you don't use the menu, nothing is saved.</p>"
              "<p>It is a technical tool strictly necessary to provide a feature you asked for, so no consent is required (Art. 122 of the Italian Personal Data Protection Code and the Italian Data Protection Authority's cookie guidelines of 10 June 2021).</p>"),
-            ("terze", "Third-party services and content",
-             "<p>The website embeds no third-party content such as maps, videos, social buttons or external fonts: everything is served by the site itself. The hosting service, GitHub Pages, sets no cookies; it processes your IP address as described in the <a href=\"{PRIVACY}\">privacy policy</a>.</p>"),
+            ("terze", "Visit statistics and third-party services",
+             "<p>To count visits the website uses GoatCounter, an analytics service that sets no cookies and stores nothing in your browser: it neither reads nor writes information on your device and does not identify you. For this reason no consent is required. How it works and what data it receives is explained in the <a href=\"{PRIVACY}\">privacy policy</a>.</p>"
+             "<p>The website embeds no other third-party content such as maps, videos, social buttons or external fonts. The hosting service, GitHub Pages, sets no cookies.</p>"),
             ("app", "The OYWA app",
              "<p>The OYWA app also uses no cookies or tracking tools. How it handles data is explained in the <a href=\"{PRIVACY}\">privacy policy</a>.</p>"),
             ("gestire", "Managing cookies and local storage",
@@ -282,12 +292,13 @@ COOKIE = {
             ("cosa", "Qué son las cookies",
              "<p>Las cookies son pequeños archivos de texto que un sitio web guarda en el navegador de quien lo visita. Herramientas similares son el localStorage y otras formas de almacenamiento local del navegador. Pueden servir para que el sitio funcione (herramientas técnicas) o para medir las visitas y mostrar publicidad (herramientas analíticas y de perfilado).</p>"),
             ("sito", "Cookies que usa www.oywa.it",
-             "<p>Ninguna. El sitio www.oywa.it no instala cookies técnicas, analíticas, de perfilado ni de terceros.</p>"),
+             "<p>Ninguna. El sitio www.oywa.it no instala cookies técnicas, analíticas, de perfilado ni de terceros. Las estadísticas de visitas también funcionan sin cookies (ver punto 4).</p>"),
             ("locale", "Almacenamiento local: el idioma",
              "<p>Si eliges un idioma en el menú superior, el sitio recuerda tu elección guardando en tu navegador el elemento <code>oywa-lang</code> (por ejemplo «es»). Solo sirve para mostrarte el sitio en el idioma elegido: no contiene datos personales, no se envía a ningún servidor y permanece hasta que lo borras en los ajustes del navegador. Si no usas el menú, no se guarda nada.</p>"
              "<p>Es una herramienta técnica necesaria para prestar una función que has solicitado, por lo que no requiere consentimiento (art. 122 del Código italiano de protección de datos personales y directrices sobre cookies de la autoridad italiana de protección de datos de 10 de junio de 2021).</p>"),
-            ("terze", "Servicios y contenidos de terceros",
-             "<p>El sitio no incorpora contenidos de terceros como mapas, vídeos, botones de redes sociales o fuentes externas: todo lo sirve el propio sitio. El servicio de alojamiento, GitHub Pages, no instala cookies; trata la dirección IP como se describe en la <a href=\"{PRIVACY}\">política de privacidad</a>.</p>"),
+            ("terze", "Estadísticas de visitas y servicios de terceros",
+             "<p>Para contar las visitas el sitio usa GoatCounter, un servicio de estadísticas que no instala cookies y no guarda nada en tu navegador: no lee ni escribe información en tu dispositivo y no te identifica. Por eso no requiere consentimiento. Cómo funciona y qué datos recibe se explica en la <a href=\"{PRIVACY}\">política de privacidad</a>.</p>"
+             "<p>El sitio no incorpora otros contenidos de terceros como mapas, vídeos, botones de redes sociales o fuentes externas. El servicio de alojamiento, GitHub Pages, no instala cookies.</p>"),
             ("app", "La app OYWA",
              "<p>La app OYWA tampoco usa cookies ni herramientas de rastreo. Cómo trata los datos se explica en la <a href=\"{PRIVACY}\">política de privacidad</a>.</p>"),
             ("gestire", "Cómo gestionar las cookies y el almacenamiento local",
@@ -305,12 +316,13 @@ COOKIE = {
             ("cosa", "O que são cookies",
              "<p>Cookies são pequenos arquivos de texto que um site salva no navegador de quem o visita. Ferramentas parecidas são o localStorage e outras formas de armazenamento local do navegador. Podem servir para fazer o site funcionar (ferramentas técnicas) ou para medir visitas e mostrar anúncios (ferramentas analíticas e de perfil).</p>"),
             ("sito", "Cookies usados por www.oywa.it",
-             "<p>Nenhum. O site www.oywa.it não instala cookies técnicos, analíticos, de perfil nem de terceiros.</p>"),
+             "<p>Nenhum. O site www.oywa.it não instala cookies técnicos, analíticos, de perfil nem de terceiros. As estatísticas de visitas também funcionam sem cookies (ver item 4).</p>"),
             ("locale", "Armazenamento local: o idioma",
              "<p>Se você escolher um idioma no menu do topo, o site lembra a escolha salvando no seu navegador o item <code>oywa-lang</code> (por exemplo “pt”). Ele só serve para mostrar o site no idioma escolhido: não contém dados pessoais, não é enviado a nenhum servidor e fica até você apagá-lo nas configurações do navegador. Se você não usar o menu, nada é salvo.</p>"
              "<p>É uma ferramenta técnica necessária para oferecer uma função que você pediu, por isso não exige consentimento (art. 122 do Código italiano de proteção de dados pessoais e diretrizes sobre cookies da autoridade italiana de proteção de dados de 10 de junho de 2021).</p>"),
-            ("terze", "Serviços e conteúdos de terceiros",
-             "<p>O site não incorpora conteúdos de terceiros como mapas, vídeos, botões de redes sociais ou fontes externas: tudo é servido pelo próprio site. O serviço de hospedagem, GitHub Pages, não instala cookies; ele trata o endereço IP como descrito na <a href=\"{PRIVACY}\">política de privacidade</a>.</p>"),
+            ("terze", "Estatísticas de visitas e serviços de terceiros",
+             "<p>Para contar as visitas o site usa o GoatCounter, um serviço de estatísticas que não instala cookies e não salva nada no seu navegador: não lê nem grava informações no seu dispositivo e não identifica você. Por isso não exige consentimento. Como funciona e quais dados recebe está explicado na <a href=\"{PRIVACY}\">política de privacidade</a>.</p>"
+             "<p>O site não incorpora outros conteúdos de terceiros como mapas, vídeos, botões de redes sociais ou fontes externas. O serviço de hospedagem, GitHub Pages, não instala cookies.</p>"),
             ("app", "O app OYWA",
              "<p>O app OYWA também não usa cookies nem ferramentas de rastreamento. Como ele trata os dados está explicado na <a href=\"{PRIVACY}\">política de privacidade</a>.</p>"),
             ("gestire", "Como gerenciar cookies e armazenamento local",

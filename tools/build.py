@@ -128,7 +128,8 @@ def head(lang, page, title, desc, og_title, extra=""):
 <link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/fonts/fonts.css?v={v}">
 <link rel="stylesheet" href="/style.css?v={v}">
-{extra}</head>
+{extra}<script data-goatcounter="https://oywa.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</head>
 <body>
 <a class="skip" href="#main">{esc(COMMON[lang]["skip"])}</a>
 """
@@ -483,6 +484,7 @@ def not_found():
 <link rel="icon" href="/assets/app_icon.png">
 <link rel="stylesheet" href="/assets/fonts/fonts.css?v={v}">
 <link rel="stylesheet" href="/style.css?v={v}">
+<script data-goatcounter="https://oywa.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>
 <body>
 <header class="site-header"><div class="wrap">
