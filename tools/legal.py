@@ -339,7 +339,7 @@ COOKIE = {
 TERMS = {
     "it": {
         "title": "Termini e condizioni – OYWA",
-        "desc": "Termini e condizioni d'uso dell'app OYWA e del sito www.oywa.it: servizio gratuito, dati sul tuo dispositivo, età minima 16 anni.",
+        "desc": "Termini e condizioni d'uso dell'app OYWA e del sito www.oywa.it: versione di test gratuita, dati sul tuo dispositivo, età minima 16 anni.",
         "h1": "Termini e condizioni",
         "intro": "Questi termini regolano l'uso dell'app OYWA e del sito www.oywa.it. Usandoli, li accetti.",
         "sections": [
@@ -348,7 +348,7 @@ TERMS = {
             ("requisiti", "Chi può usare OYWA",
              "<p>OYWA è destinata a persone che hanno almeno 16 anni. Usando l'app confermi di avere almeno questa età.</p>"),
             ("servizio", "Il servizio",
-             "<p>OYWA è un'app gratuita per archiviare i luoghi visitati nei viaggi. Non contiene acquisti né abbonamenti e non mostra pubblicità.</p>"
+             "<p>OYWA è un'app per archiviare i luoghi visitati nei viaggi. La versione di test è gratuita: non contiene acquisti né abbonamenti e non mostra pubblicità. Prezzo e condizioni della versione definitiva saranno comunicati al lancio.</p>"
              "<p>L'app è attualmente in fase di test: può contenere errori e le sue funzioni possono cambiare, essere aggiunte o rimosse. Possiamo sospendere o terminare la versione di test in qualsiasi momento; i dati già salvati restano comunque sul tuo dispositivo.</p>"),
             ("dati", "I tuoi dati e i backup",
              "<p>I contenuti che inserisci restano tuoi e sono salvati solo sul tuo dispositivo, come spiegato nell'<a href=\"{PRIVACY}\">informativa sulla privacy</a>. Non abbiamo accesso ai tuoi dati e non possiamo recuperarli se vengono persi, per esempio se il telefono si rompe o se disinstalli l'app.</p>"
@@ -372,7 +372,7 @@ TERMS = {
     },
     "en": {
         "title": "Terms and conditions – OYWA",
-        "desc": "Terms and conditions of use of the OYWA app and the www.oywa.it website: free service, data on your device, minimum age 16.",
+        "desc": "Terms and conditions of use of the OYWA app and the www.oywa.it website: free test version, data on your device, minimum age 16.",
         "h1": "Terms and conditions",
         "intro": "These terms govern the use of the OYWA app and the www.oywa.it website. By using them, you accept these terms.",
         "sections": [
@@ -381,7 +381,7 @@ TERMS = {
             ("requisiti", "Who can use OYWA",
              "<p>OYWA is intended for people aged 16 or over. By using the app you confirm that you are at least that age.</p>"),
             ("servizio", "The service",
-             "<p>OYWA is a free app to archive the places you visit when travelling. It has no purchases or subscriptions and shows no ads.</p>"
+             "<p>OYWA is an app to archive the places you visit when travelling. The test version is free: it has no purchases or subscriptions and shows no ads. The price and terms of the final version will be announced at launch.</p>"
              "<p>The app is currently in testing: it may contain errors and its features may change, be added or be removed. We may suspend or end the test version at any time; the data you have already saved stays on your device.</p>"),
             ("dati", "Your data and backups",
              "<p>The content you enter remains yours and is stored only on your device, as explained in the <a href=\"{PRIVACY}\">privacy policy</a>. We have no access to your data and cannot recover it if it is lost, for example if your phone breaks or you uninstall the app.</p>"
@@ -405,7 +405,7 @@ TERMS = {
     },
     "es": {
         "title": "Términos y condiciones – OYWA",
-        "desc": "Términos y condiciones de uso de la app OYWA y del sitio www.oywa.it: servicio gratuito, datos en tu dispositivo, edad mínima 16 años.",
+        "desc": "Términos y condiciones de uso de la app OYWA y del sitio www.oywa.it: versión de prueba gratuita, datos en tu dispositivo, edad mínima 16 años.",
         "h1": "Términos y condiciones",
         "intro": "Estos términos regulan el uso de la app OYWA y del sitio www.oywa.it. Al usarlos, los aceptas.",
         "sections": [
@@ -414,7 +414,7 @@ TERMS = {
             ("requisiti", "Quién puede usar OYWA",
              "<p>OYWA está destinada a personas de al menos 16 años. Al usar la app confirmas que tienes al menos esa edad.</p>"),
             ("servizio", "El servicio",
-             "<p>OYWA es una app gratuita para archivar los lugares visitados en los viajes. No incluye compras ni suscripciones y no muestra publicidad.</p>"
+             "<p>OYWA es una app para archivar los lugares visitados en los viajes. La versión de prueba es gratuita: no incluye compras ni suscripciones y no muestra publicidad. El precio y las condiciones de la versión definitiva se anunciarán en el lanzamiento.</p>"
              "<p>La app está actualmente en fase de prueba: puede contener errores y sus funciones pueden cambiar, añadirse o eliminarse. Podemos suspender o finalizar la versión de prueba en cualquier momento; los datos ya guardados permanecen en tu dispositivo.</p>"),
             ("dati", "Tus datos y las copias de seguridad",
              "<p>Los contenidos que introduces siguen siendo tuyos y solo se guardan en tu dispositivo, como se explica en la <a href=\"{PRIVACY}\">política de privacidad</a>. No tenemos acceso a tus datos y no podemos recuperarlos si se pierden, por ejemplo si el teléfono se rompe o desinstalas la app.</p>"
@@ -438,7 +438,7 @@ TERMS = {
     },
     "pt": {
         "title": "Termos e condições – OYWA",
-        "desc": "Termos e condições de uso do app OYWA e do site www.oywa.it: serviço gratuito, dados no seu dispositivo, idade mínima de 16 anos.",
+        "desc": "Termos e condições de uso do app OYWA e do site www.oywa.it: versão de teste gratuita, dados no seu dispositivo, idade mínima de 16 anos.",
         "h1": "Termos e condições",
         "intro": "Estes termos regulam o uso do app OYWA e do site www.oywa.it. Ao usá-los, você os aceita.",
         "sections": [
@@ -447,7 +447,7 @@ TERMS = {
             ("requisiti", "Quem pode usar o OYWA",
              "<p>O OYWA é destinado a pessoas com pelo menos 16 anos. Ao usar o app você confirma ter pelo menos essa idade.</p>"),
             ("servizio", "O serviço",
-             "<p>O OYWA é um app gratuito para arquivar os lugares visitados nas viagens. Não tem compras nem assinaturas e não mostra anúncios.</p>"
+             "<p>O OYWA é um app para arquivar os lugares visitados nas viagens. A versão de teste é gratuita: não tem compras nem assinaturas e não mostra anúncios. O preço e as condições da versão final serão anunciados no lançamento.</p>"
              "<p>O app está atualmente em fase de testes: pode conter erros e as suas funções podem mudar, ser adicionadas ou removidas. Podemos suspender ou encerrar a versão de teste a qualquer momento; os dados já salvos continuam no seu dispositivo.</p>"),
             ("dati", "Seus dados e os backups",
              "<p>Os conteúdos que você insere continuam sendo seus e ficam salvos só no seu dispositivo, como explicado na <a href=\"{PRIVACY}\">política de privacidade</a>. Não temos acesso aos seus dados e não podemos recuperá-los se forem perdidos, por exemplo se o celular quebrar ou se você desinstalar o app.</p>"

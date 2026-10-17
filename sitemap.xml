@@ -160,4 +160,36 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://www.oywa.it/es/terminos/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.oywa.it/pt/termos/"/>
   </url>
+  <url>
+    <loc>https://www.oywa.it/faq/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.oywa.it/faq/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.oywa.it/en/faq/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.oywa.it/es/preguntas-frecuentes/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.oywa.it/pt/perguntas-frequentes/"/>
+  </url>
+  <url>
+    <loc>https://www.oywa.it/en/faq/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.oywa.it/faq/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.oywa.it/en/faq/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.oywa.it/es/preguntas-frecuentes/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.oywa.it/pt/perguntas-frequentes/"/>
+  </url>
+  <url>
+    <loc>https://www.oywa.it/es/preguntas-frecuentes/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.oywa.it/faq/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.oywa.it/en/faq/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.oywa.it/es/preguntas-frecuentes/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.oywa.it/pt/perguntas-frequentes/"/>
+  </url>
+  <url>
+    <loc>https://www.oywa.it/pt/perguntas-frequentes/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.oywa.it/faq/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.oywa.it/en/faq/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.oywa.it/es/preguntas-frecuentes/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.oywa.it/pt/perguntas-frequentes/"/>
+  </url>
 </urlset>

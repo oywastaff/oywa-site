@@ -17,13 +17,13 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from content import COMMON, FEATURES, GALLERY, HOME, LANGS, SLUGS  # noqa: E402
+from content import COMMON, FAQ, FEATURES, GALLERY, HOME, HOME_FAQ, LANGS, SLUGS  # noqa: E402
 from legal import COOKIE, PRIVACY, TERMS, TOC, TRANSLATION_NOTE, UPDATED  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://www.oywa.it"
 EMAIL = "staff@oywa.it"
-ASSET_VERSION = "5"
+ASSET_VERSION = "6"
 LASTMOD = "2026-10-11"
 
 ICONS = {
@@ -182,6 +182,7 @@ def header(lang, page):
   <nav class="nav" aria-label="Menu">
     {link("home", c["nav_home"], "nav-home")}
     {link("features", c["nav_features"])}
+    {link("faq", FAQ[lang]["nav"], "nav-faq")}
     {link("privacy", c["nav_privacy"], "nav-privacy")}
     {lang_switcher(lang, page)}
     <a class="btn" href="{url(lang, "home")}#beta">{esc(c["cta_beta"])}</a>
@@ -199,6 +200,7 @@ def footer(lang):
   </div>
   <nav aria-label="Footer">
     <a href="{url(lang, "features")}">{esc(c["nav_features"])}</a>
+    <a href="{url(lang, "faq")}">{esc(FAQ[lang]["nav"])}</a>
     <a href="{url(lang, "privacy")}">{esc(c["privacy"])}</a>
     <a href="mailto:{EMAIL}">{esc(c["contacts"])}</a>
   </nav>
@@ -246,6 +248,52 @@ def feature_row(row, flip, lang):
       </div>
     </div>
 """
+
+
+def faq_list(items):
+    return "".join(
+        f'<details class="faq-item" id="{fid}"><summary>{esc(q)}</summary><p>{esc(a)}</p></details>'
+        for fid, q, a in items
+    )
+
+
+def faq_json_ld(lang):
+    data = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": LANGS[lang]["html"],
+        "mainEntity": [
+            {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}}
+            for _, q, a in FAQ[lang]["items"]
+        ],
+    }
+    return '<script type="application/ld+json">\n' + json.dumps(data, ensure_ascii=False, indent=2) + "\n</script>\n"
+
+
+def faq_page(lang):
+    t = FAQ[lang]
+    body = f"""{header(lang, "faq")}
+<main id="main">
+
+<div class="page-hero">
+  <div class="wrap reveal">
+    <span class="eyebrow">{esc(t["eyebrow"])}</span>
+    <h1>{esc(t["h1"])}</h1>
+    <p>{esc(t["p"])} <a href="mailto:{EMAIL}">{EMAIL}</a></p>
+  </div>
+</div>
+
+<section style="padding-top:24px">
+  <div class="wrap">
+    <div class="faq reveal">{faq_list(t["items"])}</div>
+  </div>
+</section>
+
+{cta(lang, HOME[lang]["cta_h2"], HOME[lang]["cta_p"])}
+</main>
+
+{footer(lang)}"""
+    return head(lang, "faq", t["title"], t["desc"], t["og_title"], faq_json_ld(lang)) + body
 
 
 def cta(lang, title, text, anchor=False):
@@ -372,6 +420,17 @@ def home(lang):
   <div class="gallery-nav">
     <button type="button" data-gallery="prev" aria-label="{esc(c["prev"])}">{icon("prev")}</button>
     <button type="button" data-gallery="next" aria-label="{esc(c["next"])}">{icon("next")}</button>
+  </div>
+</section>
+
+<section class="faq-section">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2>{esc(FAQ[lang]["home_h2"])}</h2>
+    </div>
+    <div class="faq reveal">{faq_list(FAQ[lang]["items"][:HOME_FAQ])}</div>
+    <p class="faq-more reveal"><a class="btn ghost" href="{url(lang, "faq")}">{esc(FAQ[lang]["home_more"])}</a></p>
   </div>
 </section>
 
@@ -556,7 +615,7 @@ def og_images():
 
 
 def check_keys():
-    for name, table in [("COMMON", COMMON), ("HOME", HOME), ("FEATURES", FEATURES), ("GALLERY", GALLERY),
+    for name, table in [("COMMON", COMMON), ("HOME", HOME), ("FAQ", FAQ), ("FEATURES", FEATURES), ("GALLERY", GALLERY),
                         ("PRIVACY", PRIVACY), ("COOKIE", COOKIE), ("TERMS", TERMS)]:
         ref = table["it"]
         for lang in LANGS:
@@ -564,7 +623,7 @@ def check_keys():
             if isinstance(ref, dict):
                 missing = set(ref) - set(other)
                 assert not missing, f"{name}[{lang}] senza {missing}"
-                for key in ("rows", "sections", "cards"):
+                for key in ("rows", "sections", "cards", "items"):
                     if key in ref:
                         assert len(ref[key]) == len(other[key]), f"{name}[{lang}].{key}: numero diverso"
             else:
@@ -579,6 +638,7 @@ def main():
         "privacy": lambda l: legal(l, "privacy", PRIVACY[l]),
         "cookie": lambda l: legal(l, "cookie", COOKIE[l]),
         "terms": lambda l: legal(l, "terms", TERMS[l]),
+        "faq": faq_page,
     }
     for page, render in pages.items():
         for lang in LANGS:
