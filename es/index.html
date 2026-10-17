@@ -30,8 +30,8 @@
 <link rel="apple-touch-icon" href="/assets/app_icon.png">
 <link rel="preload" href="/assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/fonts/fonts.css?v=7">
-<link rel="stylesheet" href="/style.css?v=7">
+<link rel="stylesheet" href="/assets/fonts/fonts.css?v=8">
+<link rel="stylesheet" href="/style.css?v=8">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -234,7 +234,7 @@
       <span class="eyebrow">FAQ</span>
       <h2>Preguntas frecuentes</h2>
     </div>
-    <div class="faq reveal"><details class="faq-item" id="cos-e"><summary>¿Qué es OYWA?</summary><p>Una app para guardar y recordar los lugares que visitas en tus viajes (ciudades, restaurantes, hoteles, playas, monumentos) en un mapa personal, con valoraciones, viajes, países visitados e insignias.</p></details><details class="faq-item" id="account"><summary>¿Hace falta una cuenta?</summary><p>No. Abres la app y empiezas enseguida: sin registro, correo ni contraseña.</p></details><details class="faq-item" id="dati"><summary>¿Dónde van mis datos?</summary><p>Se quedan solo en tu teléfono. OYWA no tiene servidores que los recopilen y nadie más los ve.</p></details><details class="faq-item" id="prezzo"><summary>¿Cuánto cuesta?</summary><p>La versión de prueba es gratuita. El precio de la versión definitiva se anunciará en el lanzamiento, sin suscripciones ni publicidad.</p></details><details class="faq-item" id="uscita"><summary>¿Cuándo sale? ¿En qué teléfonos funciona?</summary><p>Estará disponible para iPhone y Android. La versión de prueba está prevista antes de finales de octubre de 2026: puedes apuntarte con los botones de este sitio.</p></details><details class="faq-item" id="test"><summary>¿Cómo participo en la versión de prueba?</summary><p>Toca «Pruébala en iPhone» o «Pruébala en Android»: se abre un correo ya preparado. Te avisaremos cuando la versión de prueba esté lista y te enviaremos las instrucciones para instalarla.</p></details></div>
+    <div class="faq reveal"><details class="faq-item" id="cos-e"><summary>¿Qué es OYWA?</summary><p>Una app para guardar y recordar los lugares que visitas en tus viajes (ciudades, restaurantes, hoteles, playas, monumentos) en un mapa personal, con valoraciones, viajes, países visitados e insignias.</p></details><details class="faq-item" id="account"><summary>¿Hace falta una cuenta?</summary><p>No. Abres la app y empiezas enseguida: sin registro, correo ni contraseña.</p></details><details class="faq-item" id="dati"><summary>¿Dónde van mis datos?</summary><p>Se quedan solo en tu teléfono. OYWA no tiene servidores que los recopilen y nadie más los ve.</p></details><details class="faq-item" id="prezzo"><summary>¿Cuánto cuesta?</summary><p>La versión de prueba es gratuita. El precio de la versión definitiva se anunciará en el lanzamiento, sin suscripciones ni publicidad.</p></details><details class="faq-item" id="uscita"><summary>¿Cuándo sale? ¿En qué teléfonos funciona?</summary><p>Estará disponible para iPhone y Android. La versión de prueba está prevista antes de finales de octubre de 2026: puedes apuntarte con los botones de este sitio.</p></details><details class="faq-item" id="test"><summary>¿Cómo participo en la versión de prueba?</summary><p>Toca «Pruébala en iPhone» o «Pruébala en Android», escribe tu nombre y pulsa Enviar: se abre tu app de correo con el mensaje listo. Te avisaremos cuando la versión de prueba esté lista y te enviaremos las instrucciones para instalarla.</p></details></div>
     <p class="faq-more reveal"><a class="btn ghost" href="/es/preguntas-frecuentes/">Todas las preguntas →</a></p>
   </div>
 </section>
@@ -287,6 +287,19 @@
   </div>
 </div></footer>
 
-<script src="/main.js?v=7"></script>
+<dialog class="beta-dialog" id="beta-dialog" aria-labelledby="beta-title">
+  <form method="dialog" class="beta-form">
+    <h2 id="beta-title">Participa en la versión de prueba</h2>
+    <p class="beta-os">Sistema operativo: <b data-os-label></b></p>
+    <label for="beta-name">Tu nombre</label>
+    <input id="beta-name" name="name" type="text" autocomplete="name" maxlength="60" required placeholder="Ej. Lucía">
+    <p class="beta-note">Se abrirá tu app de correo con el mensaje listo: solo tendrás que pulsar Enviar.</p>
+    <div class="beta-actions">
+      <button type="button" class="btn ghost" data-beta-cancel>Cancelar</button>
+      <button type="submit" class="btn" data-beta-send disabled><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7z"/></svg>Enviar</button>
+    </div>
+  </form>
+</dialog>
+<script src="/main.js?v=8"></script>
 </body>
 </html>

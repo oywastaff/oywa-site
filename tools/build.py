@@ -25,7 +25,7 @@ SITE = "https://www.oywa.it"
 EMAIL = "staff@oywa.it"
 TIKTOK = "https://www.tiktok.com/@oywa_travel"
 TIKTOK_ICON = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 2h-3.3v13.3a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .9.1V9.1a6.3 6.3 0 1 0 5.3 6.2V8.6a7.9 7.9 0 0 0 4.4 1.4V6.7a4.6 4.6 0 0 1-4.4-4.7z"/></svg>'
-ASSET_VERSION = "7"
+ASSET_VERSION = "8"
 LASTMOD = "2026-10-11"
 
 ICONS = {
@@ -216,6 +216,7 @@ def footer(lang):
   </div>
 </div></footer>
 
+{beta_dialog(lang)}
 <script src="/main.js?v={ASSET_VERSION}"></script>
 </body>
 </html>
@@ -251,6 +252,24 @@ def feature_row(row, flip, lang):
       </div>
     </div>
 """
+
+
+def beta_dialog(lang):
+    """Finestra che chiede il nome prima di aprire la mail per il test (vedi main.js)."""
+    c = COMMON[lang]
+    return f"""<dialog class="beta-dialog" id="beta-dialog" aria-labelledby="beta-title">
+  <form method="dialog" class="beta-form">
+    <h2 id="beta-title">{esc(c["dlg_title"])}</h2>
+    <p class="beta-os">{esc(c["dlg_os"])}: <b data-os-label></b></p>
+    <label for="beta-name">{esc(c["dlg_name"])}</label>
+    <input id="beta-name" name="name" type="text" autocomplete="name" maxlength="60" required placeholder="{esc(c["dlg_placeholder"])}">
+    <p class="beta-note">{esc(c["dlg_note"])}</p>
+    <div class="beta-actions">
+      <button type="button" class="btn ghost" data-beta-cancel>{esc(c["dlg_cancel"])}</button>
+      <button type="submit" class="btn" data-beta-send disabled>{icon("send")}{esc(c["dlg_send"])}</button>
+    </div>
+  </form>
+</dialog>"""
 
 
 def faq_list(items):
