@@ -23,7 +23,9 @@ from legal import COOKIE, PRIVACY, TERMS, TOC, TRANSLATION_NOTE, UPDATED  # noqa
 ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://www.oywa.it"
 EMAIL = "staff@oywa.it"
-ASSET_VERSION = "6"
+TIKTOK = "https://www.tiktok.com/@oywa_travel"
+TIKTOK_ICON = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 2h-3.3v13.3a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .9.1V9.1a6.3 6.3 0 1 0 5.3 6.2V8.6a7.9 7.9 0 0 0 4.4 1.4V6.7a4.6 4.6 0 0 1-4.4-4.7z"/></svg>'
+ASSET_VERSION = "7"
 LASTMOD = "2026-10-11"
 
 ICONS = {
@@ -203,6 +205,7 @@ def footer(lang):
     <a href="{url(lang, "faq")}">{esc(FAQ[lang]["nav"])}</a>
     <a href="{url(lang, "privacy")}">{esc(c["privacy"])}</a>
     <a href="mailto:{EMAIL}">{esc(c["contacts"])}</a>
+    <a class="social" href="{TIKTOK}" target="_blank" rel="noopener" aria-label="{esc(c["tt_label"])}">{TIKTOK_ICON}TikTok</a>
   </nav>
   <div class="legal">
     <span>© 2026 OYWA</span>
@@ -321,7 +324,7 @@ def json_ld(lang):
         "@context": "https://schema.org",
         "@graph": [
             {"@type": "Organization", "@id": SITE + "/#organization", "name": "OYWA", "url": SITE + "/",
-             "logo": SITE + "/assets/app_icon.png", "email": EMAIL},
+             "logo": SITE + "/assets/app_icon.png", "email": EMAIL, "sameAs": [TIKTOK]},
             {"@type": "WebSite", "@id": SITE + "/#website", "name": "OYWA", "url": SITE + "/",
              "inLanguage": [LANGS[l]["html"] for l in LANGS], "publisher": {"@id": SITE + "/#organization"}},
             {"@type": "MobileApplication", "name": "OYWA", "operatingSystem": "iOS, Android",
@@ -420,6 +423,20 @@ def home(lang):
   <div class="gallery-nav">
     <button type="button" data-gallery="prev" aria-label="{esc(c["prev"])}">{icon("prev")}</button>
     <button type="button" data-gallery="next" aria-label="{esc(c["next"])}">{icon("next")}</button>
+  </div>
+</section>
+
+<section class="tt-section">
+  <div class="wrap">
+    <div class="tt reveal">
+      <span class="tt-icon">{TIKTOK_ICON}</span>
+      <div>
+        <span class="eyebrow">{esc(c["tt_eyebrow"])}</span>
+        <h2>{esc(c["tt_h2"])}</h2>
+        <p>{esc(c["tt_p"])}</p>
+      </div>
+      <a class="btn" href="{TIKTOK}" target="_blank" rel="noopener">{TIKTOK_ICON}{esc(c["tt_btn"])}</a>
+    </div>
   </div>
 </section>
 
