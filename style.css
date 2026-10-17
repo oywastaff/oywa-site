@@ -446,3 +446,13 @@ section { padding: 110px 0; }
 .beta-actions { display: flex; justify-content: flex-end; gap: 10px; margin-top: 8px; flex-wrap: wrap; }
 .beta-actions .btn { font: inherit; font-weight: 600; border: 0; cursor: pointer; }
 .beta-actions .btn[disabled] { background: #E2D6C4; color: #9A8F80 !important; box-shadow: none; cursor: not-allowed; transform: none; }
+.beta-choices { display: grid; gap: 10px; margin-top: 4px; }
+.beta-choices .btn { justify-content: center; }
+.beta-other { margin: 4px 0 0; font-size: .88rem; color: var(--muted); line-height: 1.7; }
+.beta-other b { color: var(--ink); font-weight: 600; user-select: all; }
+.beta-copy {
+  font: inherit; font-size: .85rem; font-weight: 600; color: var(--accent-ink); background: var(--bg-deep);
+  border: 0; border-radius: 999px; padding: 3px 10px; margin-left: 4px; cursor: pointer;
+}
+.beta-copy:hover { background: #EADCC4; }
+.beta-form[hidden] { display: none; }

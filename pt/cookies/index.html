@@ -30,8 +30,8 @@
 <link rel="apple-touch-icon" href="/assets/app_icon.png">
 <link rel="preload" href="/assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/fonts/fonts.css?v=8">
-<link rel="stylesheet" href="/style.css?v=8">
+<link rel="stylesheet" href="/assets/fonts/fonts.css?v=9">
+<link rel="stylesheet" href="/style.css?v=9">
 <script data-goatcounter="https://oywa.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>
 <body>
@@ -96,7 +96,7 @@
 </div></footer>
 
 <dialog class="beta-dialog" id="beta-dialog" aria-labelledby="beta-title">
-  <form method="dialog" class="beta-form">
+  <form method="dialog" class="beta-form" data-step="1">
     <h2 id="beta-title">Participe da versão de teste</h2>
     <p class="beta-os">Sistema operacional: <b data-os-label></b></p>
     <label for="beta-name">Seu nome</label>
@@ -107,7 +107,20 @@
       <button type="submit" class="btn" data-beta-send disabled><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7z"/></svg>Enviar</button>
     </div>
   </form>
+  <div class="beta-form" data-step="2" hidden>
+    <h2>Como você quer enviar o pedido?</h2>
+    <p class="beta-note">Abre um e-mail já pronto: confira e toque em Enviar.</p>
+    <div class="beta-choices">
+      <a class="btn" data-beta-gmail target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>Abrir no Gmail</a>
+      <a class="btn" data-beta-outlook target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>Abrir no Outlook</a>
+      <a class="btn ghost" data-beta-app>Usar o app de e-mail do computador</a>
+    </div>
+    <p class="beta-other">Usa outro serviço? Escreva para <b>staff@oywa.it</b> <button type="button" class="beta-copy" data-beta-copy data-copied="Endereço copiado">Copiar o endereço</button><br>com o assunto <b data-beta-subject></b></p>
+    <div class="beta-actions">
+      <button type="button" class="btn ghost" data-beta-back>Voltar</button>
+    </div>
+  </div>
 </dialog>
-<script src="/main.js?v=8"></script>
+<script src="/main.js?v=9"></script>
 </body>
 </html>

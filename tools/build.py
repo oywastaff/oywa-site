@@ -25,7 +25,7 @@ SITE = "https://www.oywa.it"
 EMAIL = "staff@oywa.it"
 TIKTOK = "https://www.tiktok.com/@oywa_travel"
 TIKTOK_ICON = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 2h-3.3v13.3a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .9.1V9.1a6.3 6.3 0 1 0 5.3 6.2V8.6a7.9 7.9 0 0 0 4.4 1.4V6.7a4.6 4.6 0 0 1-4.4-4.7z"/></svg>'
-ASSET_VERSION = "8"
+ASSET_VERSION = "9"
 LASTMOD = "2026-10-11"
 
 ICONS = {
@@ -255,10 +255,12 @@ def feature_row(row, flip, lang):
 
 
 def beta_dialog(lang):
-    """Finestra che chiede il nome prima di aprire la mail per il test (vedi main.js)."""
+    """Finestra della versione di test (vedi main.js): passo 1 chiede il nome; passo 2, solo da
+    computer, fa scegliere come inviare la mail (Gmail, Outlook, app di posta o indirizzo da copiare)."""
     c = COMMON[lang]
+    mail_icon = icon("mail")
     return f"""<dialog class="beta-dialog" id="beta-dialog" aria-labelledby="beta-title">
-  <form method="dialog" class="beta-form">
+  <form method="dialog" class="beta-form" data-step="1">
     <h2 id="beta-title">{esc(c["dlg_title"])}</h2>
     <p class="beta-os">{esc(c["dlg_os"])}: <b data-os-label></b></p>
     <label for="beta-name">{esc(c["dlg_name"])}</label>
@@ -269,6 +271,19 @@ def beta_dialog(lang):
       <button type="submit" class="btn" data-beta-send disabled>{icon("send")}{esc(c["dlg_send"])}</button>
     </div>
   </form>
+  <div class="beta-form" data-step="2" hidden>
+    <h2>{esc(c["dlg2_title"])}</h2>
+    <p class="beta-note">{esc(c["dlg2_note"])}</p>
+    <div class="beta-choices">
+      <a class="btn" data-beta-gmail target="_blank" rel="noopener">{mail_icon}{esc(c["dlg_gmail"])}</a>
+      <a class="btn" data-beta-outlook target="_blank" rel="noopener">{mail_icon}{esc(c["dlg_outlook"])}</a>
+      <a class="btn ghost" data-beta-app>{esc(c["dlg_app"])}</a>
+    </div>
+    <p class="beta-other">{esc(c["dlg_other"])} <b>{EMAIL}</b> <button type="button" class="beta-copy" data-beta-copy data-copied="{esc(c["dlg_copied"])}">{esc(c["dlg_copy"])}</button><br>{esc(c["dlg_subject"])} <b data-beta-subject></b></p>
+    <div class="beta-actions">
+      <button type="button" class="btn ghost" data-beta-back>{esc(c["dlg_back"])}</button>
+    </div>
+  </div>
 </dialog>"""
 
 
