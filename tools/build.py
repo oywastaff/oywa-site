@@ -12,6 +12,7 @@ Lo stile è in style.css, gli script in main.js: non vengono generati.
 import html
 import json
 import subprocess
+import urllib.parse
 import sys
 from pathlib import Path
 
@@ -22,7 +23,7 @@ from legal import COOKIE, PRIVACY, TERMS, TOC, TRANSLATION_NOTE, UPDATED  # noqa
 ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://www.oywa.it"
 EMAIL = "staff@oywa.it"
-ASSET_VERSION = "4"
+ASSET_VERSION = "5"
 LASTMOD = "2026-10-11"
 
 ICONS = {
@@ -68,9 +69,31 @@ def out_path(lang, page):
     return ROOT / rel
 
 
-def mailto(lang):
-    subject = COMMON[lang]["mail_subject"].replace(" ", "%20")
-    return f"mailto:{EMAIL}?subject={subject}"
+OS_NAMES = {"ios": "iOS", "android": "Android"}
+
+OS_ICONS = {
+    # Mela stilizzata e testa del robot Android, in tinta piena.
+    "ios": '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 2.5c.1 1.1-.3 2.2-1 3-.7.8-1.8 1.4-2.8 1.3-.1-1.1.4-2.2 1-2.9.7-.8 1.9-1.4 2.8-1.4z"/><path d="M19.6 17.1c-.5 1.1-.7 1.6-1.4 2.6-.9 1.4-2.2 3.1-3.8 3.1-1.4 0-1.8-.9-3.7-.9s-2.3.9-3.7.9c-1.6 0-2.8-1.6-3.7-2.9-2.6-3.9-2.8-8.5-1.2-10.9 1.1-1.7 2.9-2.7 4.6-2.7s2.8.9 4.2.9c1.4 0 2.2-.9 4.2-.9 1.5 0 3.1.8 4.2 2.2-3.7 2-3.1 7.3.3 8.6z"/></svg>',
+    "android": '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.6 9.5 19.4 6.4a.4.4 0 0 0-.7-.4l-1.8 3.1A11 11 0 0 0 12 8a11 11 0 0 0-4.9 1.1L5.3 6a.4.4 0 0 0-.7.4l1.8 3.1A9.6 9.6 0 0 0 1.5 17h21a9.6 9.6 0 0 0-4.9-7.5zM7 14.3a1.1 1.1 0 1 1 0-2.2 1.1 1.1 0 0 1 0 2.2zm10 0a1.1 1.1 0 1 1 0-2.2 1.1 1.1 0 0 1 0 2.2z"/></svg>',
+}
+
+
+def mailto(lang, os=None):
+    """Link email per la versione di test; con `os` il sistema operativo va nell'oggetto e nel testo."""
+    c = COMMON[lang]
+    subject = c["mail_subject"] + (f" – {OS_NAMES[os]}" if os else "")
+    query = "subject=" + urllib.parse.quote(subject)
+    if os:
+        query += "&body=" + urllib.parse.quote(c["mail_body"].format(os=OS_NAMES[os]))
+    return f"mailto:{EMAIL}?{query}"
+
+
+def os_buttons(lang, cls="btn"):
+    c = COMMON[lang]
+    return "".join(
+        f'<a class="{cls} btn-os" href="{mailto(lang, os)}" data-os="{os}">{OS_ICONS[os]}{esc(c["btn_" + os])}</a>'
+        for os in ("ios", "android")
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -161,7 +184,7 @@ def header(lang, page):
     {link("features", c["nav_features"])}
     {link("privacy", c["nav_privacy"], "nav-privacy")}
     {lang_switcher(lang, page)}
-    <a class="btn" href="{mailto(lang)}">{esc(c["cta_beta"])}</a>
+    <a class="btn" href="{url(lang, "home")}#beta">{esc(c["cta_beta"])}</a>
   </nav>
 </div></header>
 """
@@ -225,15 +248,16 @@ def feature_row(row, flip, lang):
 """
 
 
-def cta(title, text, href, label, icon_name="mail"):
-    return f"""<section>
+def cta(lang, title, text, anchor=False):
+    section_id = ' id="beta"' if anchor else ""
+    return f"""<section{section_id}>
   <div class="wrap">
     <div class="cta reveal">
       <div>
         <h2>{esc(title)}</h2>
         <p>{esc(text)}</p>
       </div>
-      <a class="btn" href="{href}">{icon(icon_name)}{esc(label)}</a>
+      <div class="cta-actions" role="group" aria-label="{esc(COMMON[lang]["beta_aria"])}">{os_buttons(lang)}</div>
     </div>
   </div>
 </section>
@@ -294,7 +318,7 @@ def home(lang):
       <h1>{esc(t["h1"])} <em>{esc(t["h1_em"])}<svg viewBox="0 0 300 20" preserveAspectRatio="none" aria-hidden="true"><path d="M3 14 C 60 4, 120 4, 170 10 S 260 16, 297 6" fill="none" stroke="#D2785A" stroke-width="5" stroke-linecap="round" opacity=".45"/></svg></em>.</h1>
       <p class="lead">{esc(t["lead"])}</p>
       <div class="actions">
-        <a class="btn" href="{mailto(lang)}">{icon("send")}{esc(t["btn_try"])}</a>
+        {os_buttons(lang)}
         <a class="btn ghost" href="{url(lang, "features")}">{esc(t["btn_features"])}</a>
       </div>
       <ul class="chips">{chips}</ul>
@@ -364,7 +388,7 @@ def home(lang):
   </div>
 </section>
 
-{cta(t["cta_h2"], t["cta_p"], mailto(lang), EMAIL)}
+{cta(lang, t["cta_h2"], t["cta_p"], anchor=True)}
 </main>
 
 {footer(lang)}"""
@@ -405,7 +429,7 @@ def features(lang):
   </div>
 </section>
 
-{cta(t["cta_h2"], t["cta_p"], mailto(lang), t["cta_btn"])}
+{cta(lang, t["cta_h2"], t["cta_p"])}
 </main>
 
 {footer(lang)}"""

@@ -377,3 +377,14 @@ section { padding: 110px 0; }
 @media (max-width: 640px) {
   .lang ul { right: -8px; }
 }
+
+/* ---------- Pulsanti iPhone / Android ---------- */
+.btn-os svg { width: 19px; height: 19px; }
+.cta-actions { display: flex; flex-direction: column; gap: 12px; position: relative; z-index: 1; }
+.cta-actions .btn { justify-content: center; min-width: 230px; }
+@media (max-width: 960px) {
+  .cta-actions { flex-direction: row; flex-wrap: wrap; }
+}
+@media (max-width: 640px) {
+  .cta-actions .btn, .hero .actions .btn { flex: 1 1 100%; justify-content: center; }
+}
