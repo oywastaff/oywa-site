@@ -73,7 +73,7 @@ COMMON = {
         "cta_beta": "Teste a beta", "lang_label": "Idioma",
         "mail_subject": "Quero testar o OYWA",
         "dlg_title": "Participe da versão de teste", "dlg2_title": "Como você quer enviar o pedido?", "dlg2_note": "Abre um e-mail já pronto: confira e toque em Enviar.", "dlg_gmail": "Abrir no Gmail", "dlg_outlook": "Abrir no Outlook", "dlg_app": "Usar o app de e-mail do computador", "dlg_copy": "Copiar o endereço", "dlg_copied": "Endereço copiado", "dlg_other": "Usa outro serviço? Escreva para", "dlg_subject": "com o assunto", "dlg_back": "Voltar", "dlg_name": "Seu nome", "dlg_placeholder": "Ex. Ana", "dlg_note": "Seu app de e-mail vai abrir com a mensagem pronta: é só tocar em Enviar.", "dlg_cancel": "Cancelar", "dlg_send": "Enviar", "dlg_os": "Sistema operacional",
-        "tt_eyebrow": "No TikTok", "tt_h2": "Veja o OYWA em ação.", "tt_p": "Vídeos curtos sobre como o app funciona, ideias para lembrar suas viagens e as novidades antes de todo mundo.", "tt_btn": "Siga @oywa_travel", "tt_label": "OYWA no TikTok",
+        "tt_eyebrow": "No TikTok", "tt_h2": "Veja o OYWA em ação.", "tt_p": "Vídeos curtos sobre como o app funciona, ideias para lembrar suas viagens e as novidades antes de todo mundo.", "tt_btn": "Siga @oywa_viagens", "tt_label": "OYWA no TikTok",
         "btn_ios": "Teste no iPhone", "btn_android": "Teste no Android",
         "mail_body": "Olá! Gostaria de participar da versão de teste do OYWA.\nSistema operacional: {os}\nNome: ",
         "beta_aria": "Participe da versão de teste",
