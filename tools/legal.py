@@ -29,10 +29,12 @@ PRIVACY = {
         "title": "Informativa sulla privacy – OYWA",
         "desc": "Informativa sulla privacy dell'app OYWA e del sito www.oywa.it: i dati dell'app restano sul tuo dispositivo, il sito non usa cookie e conta le visite in forma anonima.",
         "h1": "Informativa sulla privacy",
+        # Data propria della pagina (prevale su UPDATED, comune alle pagine legali).
+        "updated": "Ultimo aggiornamento: 20 ottobre 2026",
         "intro": "Questa informativa spiega quali dati trattano l'app OYWA e il sito www.oywa.it, e come.",
         "summary": [
             ("attrazione", "phone", "I dati restano sul telefono", "Nessun server di OYWA, nessun account, nessun login."),
-            ("aereo", "globe", "OpenStreetMap per mappa e ricerca", "Solo quando usi la funzione corrispondente."),
+            ("aereo", "globe", "OpenStreetMap per mappa e ricerca", "Per mappa, ricerca e verifica delle città."),
             ("ristorante", "ban", "Niente cookie né pubblicità", "Sul sito solo un conteggio anonimo delle visite."),
         ],
         "sections": [
@@ -42,9 +44,10 @@ PRIVACY = {
             ("principio", "Principio di base: i dati dell'app restano sul tuo dispositivo",
              "<p>I dati che inserisci nell'app (luoghi, visite, viaggi, città, persone, voti, note e tutto ciò che salvi) sono conservati esclusivamente nel database locale del tuo telefono. OYWA non ha server propri che ricevono o conservano i tuoi dati, non richiede un account e non richiede il login.</p>"),
             ("terze-parti", "Dati inviati dall'app a servizi di terze parti",
-             "<p>Per alcune funzioni l'app contatta servizi esterni. Questi invii avvengono solo quando usi la funzione corrispondente:</p><ul>"
+             "<p>Per alcune funzioni l'app contatta servizi esterni, solo nei casi indicati qui sotto:</p><ul>"
              "<li><strong>Mappa (OpenStreetMap).</strong> Le immagini della mappa sono scaricate dai server di OpenStreetMap (tile.openstreetmap.org). Il server riceve l'indirizzo IP del dispositivo e l'area della mappa che stai guardando.</li>"
-             "<li><strong>Ricerca e geocodifica (Nominatim, OpenStreetMap).</strong> Quando cerchi un luogo, il testo della ricerca viene inviato a nominatim.openstreetmap.org. Quando l'app ricava città e paese da una posizione (per esempio durante l'inserimento di un luogo o l'import di un file), le coordinate vengono inviate allo stesso servizio.</li>"
+             "<li><strong>Ricerca e geocodifica (Nominatim, OpenStreetMap).</strong> Quando cerchi un luogo, il testo della ricerca viene inviato a nominatim.openstreetmap.org. Quando l'app ricava città e paese da una posizione (per esempio durante l'inserimento di un luogo o l'import di un file), le coordinate vengono inviate allo stesso servizio. All'avvio, se ci sono città non ancora verificate, l'app invia allo stesso servizio il nome della città e del paese, per ricavarne il centro da mostrare sulla mappa.</li>"
+             "<li><strong>Caratteri tipografici (Google Fonts).</strong> Al primo avvio l'app scarica i caratteri tipografici dai server di Google (fonts.gstatic.com), che ricevono l'indirizzo IP del dispositivo. I caratteri restano poi salvati sul dispositivo e non vengono riscaricati.</li>"
              "<li><strong>App di navigazione.</strong> Quando scegli di aprire un luogo in Mappe, Google Maps o Waze, l'app passa le coordinate a quell'app. Da quel momento si applica la sua informativa.</li></ul>"
              "<p>OYWA non usa strumenti di analisi, pubblicità, crash reporting o tracciamento di terze parti.</p>"),
             ("posizione", "Posizione",
@@ -80,10 +83,12 @@ PRIVACY = {
         "title": "Privacy policy – OYWA",
         "desc": "Privacy policy of the OYWA app and of www.oywa.it: the app's data stays on your device, and the website uses no cookies and only counts visits anonymously.",
         "h1": "Privacy policy",
+        # Data propria della pagina (prevale su UPDATED, comune alle pagine legali).
+        "updated": "Last updated: 20 October 2026",
         "intro": "This policy explains what data the OYWA app and the www.oywa.it website process, and how.",
         "summary": [
             ("attrazione", "phone", "Your data stays on your phone", "No OYWA servers, no account, no login."),
-            ("aereo", "globe", "OpenStreetMap for maps and search", "Only when you use that feature."),
+            ("aereo", "globe", "OpenStreetMap for maps and search", "For maps, search and verifying cities."),
             ("ristorante", "ban", "No cookies or ads", "The website only counts visits anonymously."),
         ],
         "sections": [
@@ -93,9 +98,10 @@ PRIVACY = {
             ("principio", "Basic principle: the app's data stays on your device",
              "<p>The data you enter in the app (places, visits, trips, cities, people, ratings, notes and everything you save) is stored only in the local database on your phone. OYWA has no servers of its own that receive or store your data, and requires neither an account nor a login.</p>"),
             ("terze-parti", "Data the app sends to third-party services",
-             "<p>For some features the app contacts external services. This only happens when you use the corresponding feature:</p><ul>"
+             "<p>For some features the app contacts external services, only in the cases listed below:</p><ul>"
              "<li><strong>Map (OpenStreetMap).</strong> Map images are downloaded from OpenStreetMap's servers (tile.openstreetmap.org). The server receives your device's IP address and the area of the map you are viewing.</li>"
-             "<li><strong>Search and geocoding (Nominatim, OpenStreetMap).</strong> When you search for a place, the search text is sent to nominatim.openstreetmap.org. When the app works out the city and country from a location (for example when adding a place or importing a file), the coordinates are sent to the same service.</li>"
+             "<li><strong>Search and geocoding (Nominatim, OpenStreetMap).</strong> When you search for a place, the search text is sent to nominatim.openstreetmap.org. When the app works out the city and country from a location (for example when adding a place or importing a file), the coordinates are sent to the same service. At startup, if there are cities not yet verified, the app sends the city and country name to the same service to find the city centre shown on the map.</li>"
+             "<li><strong>Typefaces (Google Fonts).</strong> On first launch the app downloads its typefaces from Google's servers (fonts.gstatic.com), which receive the device's IP address. The typefaces are then stored on the device and not downloaded again.</li>"
              "<li><strong>Navigation apps.</strong> When you choose to open a place in Apple Maps, Google Maps or Waze, the app passes the coordinates to that app. From then on, that app's privacy policy applies.</li></ul>"
              "<p>OYWA uses no third-party analytics, advertising, crash reporting or tracking tools.</p>"),
             ("posizione", "Location",
@@ -131,10 +137,12 @@ PRIVACY = {
         "title": "Política de privacidad – OYWA",
         "desc": "Política de privacidad de la app OYWA y de www.oywa.it: los datos de la app se quedan en tu dispositivo y el sitio web no usa cookies y cuenta las visitas de forma anónima.",
         "h1": "Política de privacidad",
+        # Data propria della pagina (prevale su UPDATED, comune alle pagine legali).
+        "updated": "Última actualización: 20 de octubre de 2026",
         "intro": "Esta política explica qué datos tratan la app OYWA y el sitio web www.oywa.it, y cómo.",
         "summary": [
             ("attrazione", "phone", "Los datos se quedan en el teléfono", "Sin servidores de OYWA, sin cuenta, sin inicio de sesión."),
-            ("aereo", "globe", "OpenStreetMap para mapa y búsqueda", "Solo cuando usas esa función."),
+            ("aereo", "globe", "OpenStreetMap para mapa y búsqueda", "Para mapa, búsqueda y verificación de ciudades."),
             ("ristorante", "ban", "Sin cookies ni publicidad", "El sitio web solo cuenta las visitas de forma anónima."),
         ],
         "sections": [
@@ -144,9 +152,10 @@ PRIVACY = {
             ("principio", "Principio básico: los datos de la app se quedan en tu dispositivo",
              "<p>Los datos que introduces en la app (lugares, visitas, viajes, ciudades, personas, valoraciones, notas y todo lo que guardas) se conservan exclusivamente en la base de datos local de tu teléfono. OYWA no tiene servidores propios que reciban o conserven tus datos, y no requiere cuenta ni inicio de sesión.</p>"),
             ("terze-parti", "Datos que la app envía a servicios de terceros",
-             "<p>Para algunas funciones la app contacta con servicios externos. Esto solo ocurre cuando usas la función correspondiente:</p><ul>"
+             "<p>Para algunas funciones la app contacta con servicios externos, solo en los casos indicados a continuación:</p><ul>"
              "<li><strong>Mapa (OpenStreetMap).</strong> Las imágenes del mapa se descargan de los servidores de OpenStreetMap (tile.openstreetmap.org). El servidor recibe la dirección IP del dispositivo y la zona del mapa que estás viendo.</li>"
-             "<li><strong>Búsqueda y geocodificación (Nominatim, OpenStreetMap).</strong> Cuando buscas un lugar, el texto de la búsqueda se envía a nominatim.openstreetmap.org. Cuando la app deduce la ciudad y el país a partir de una ubicación (por ejemplo al añadir un lugar o importar un archivo), las coordenadas se envían al mismo servicio.</li>"
+             "<li><strong>Búsqueda y geocodificación (Nominatim, OpenStreetMap).</strong> Cuando buscas un lugar, el texto de la búsqueda se envía a nominatim.openstreetmap.org. Cuando la app deduce la ciudad y el país a partir de una ubicación (por ejemplo al añadir un lugar o importar un archivo), las coordenadas se envían al mismo servicio. Al iniciarse, si hay ciudades aún sin verificar, la app envía al mismo servicio el nombre de la ciudad y del país para obtener el centro que se muestra en el mapa.</li>"
+             "<li><strong>Tipografías (Google Fonts).</strong> En el primer inicio la app descarga sus tipografías de los servidores de Google (fonts.gstatic.com), que reciben la dirección IP del dispositivo. Después las tipografías quedan guardadas en el dispositivo y no se vuelven a descargar.</li>"
              "<li><strong>Apps de navegación.</strong> Cuando eliges abrir un lugar en Mapas, Google Maps o Waze, la app pasa las coordenadas a esa app. A partir de ese momento se aplica su política de privacidad.</li></ul>"
              "<p>OYWA no usa herramientas de analítica, publicidad, informes de errores ni rastreo de terceros.</p>"),
             ("posizione", "Ubicación",
@@ -182,10 +191,12 @@ PRIVACY = {
         "title": "Política de privacidade – OYWA",
         "desc": "Política de privacidade do app OYWA e do site www.oywa.it: os dados do app ficam no seu dispositivo e o site não usa cookies e conta as visitas de forma anônima.",
         "h1": "Política de privacidade",
+        # Data propria della pagina (prevale su UPDATED, comune alle pagine legali).
+        "updated": "Última atualização: 20 de outubro de 2026",
         "intro": "Esta política explica quais dados o app OYWA e o site www.oywa.it tratam, e como.",
         "summary": [
             ("attrazione", "phone", "Os dados ficam no celular", "Sem servidores do OYWA, sem conta, sem login."),
-            ("aereo", "globe", "OpenStreetMap para mapa e busca", "Só quando você usa a função correspondente."),
+            ("aereo", "globe", "OpenStreetMap para mapa e busca", "Para mapa, busca e verificação de cidades."),
             ("ristorante", "ban", "Sem cookies nem anúncios", "O site só conta as visitas de forma anônima."),
         ],
         "sections": [
@@ -195,9 +206,10 @@ PRIVACY = {
             ("principio", "Princípio básico: os dados do app ficam no seu dispositivo",
              "<p>Os dados que você insere no app (lugares, visitas, viagens, cidades, pessoas, avaliações, notas e tudo o que você salva) ficam guardados exclusivamente no banco de dados local do seu celular. O OYWA não tem servidores próprios que recebam ou guardem os seus dados, e não exige conta nem login.</p>"),
             ("terze-parti", "Dados que o app envia a serviços de terceiros",
-             "<p>Para algumas funções o app se conecta a serviços externos. Isso só acontece quando você usa a função correspondente:</p><ul>"
+             "<p>Para algumas funções o app se conecta a serviços externos, só nos casos indicados abaixo:</p><ul>"
              "<li><strong>Mapa (OpenStreetMap).</strong> As imagens do mapa são baixadas dos servidores do OpenStreetMap (tile.openstreetmap.org). O servidor recebe o endereço IP do dispositivo e a área do mapa que você está vendo.</li>"
-             "<li><strong>Busca e geocodificação (Nominatim, OpenStreetMap).</strong> Quando você busca um lugar, o texto da busca é enviado para nominatim.openstreetmap.org. Quando o app descobre a cidade e o país a partir de uma localização (por exemplo ao adicionar um lugar ou importar um arquivo), as coordenadas são enviadas ao mesmo serviço.</li>"
+             "<li><strong>Busca e geocodificação (Nominatim, OpenStreetMap).</strong> Quando você busca um lugar, o texto da busca é enviado para nominatim.openstreetmap.org. Quando o app descobre a cidade e o país a partir de uma localização (por exemplo ao adicionar um lugar ou importar um arquivo), as coordenadas são enviadas ao mesmo serviço. Ao iniciar, se houver cidades ainda não verificadas, o app envia ao mesmo serviço o nome da cidade e do país para obter o centro mostrado no mapa.</li>"
+             "<li><strong>Fontes (Google Fonts).</strong> Na primeira abertura o app baixa as fontes dos servidores do Google (fonts.gstatic.com), que recebem o endereço IP do dispositivo. Depois as fontes ficam salvas no dispositivo e não são baixadas de novo.</li>"
              "<li><strong>Apps de navegação.</strong> Quando você escolhe abrir um lugar no Mapas, Google Maps ou Waze, o app passa as coordenadas para esse app. A partir daí vale a política de privacidade dele.</li></ul>"
              "<p>O OYWA não usa ferramentas de análise, publicidade, relatórios de falhas ou rastreamento de terceiros.</p>"),
             ("posizione", "Localização",

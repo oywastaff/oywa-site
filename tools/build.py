@@ -583,7 +583,7 @@ def legal(lang, page, data):
   <div class="wrap reveal">
     <span class="eyebrow">OYWA</span>
     <h1>{esc(data["h1"])}</h1>
-    <p>{esc(UPDATED[lang])}</p>
+    <p>{esc(data.get("updated", UPDATED[lang]))}</p>
   </div>
 </div>
 
